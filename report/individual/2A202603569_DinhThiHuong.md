@@ -1,8 +1,5 @@
 # Báo cáo cá nhân — 2A202603569_DinhThiHuong
 
-> Đổi tên file theo quy tắc `MSSV_HoTen.md`, ví dụ `20241234_NguyenVanAn.md` (MSSV trước, dấu `_`, họ tên viết liền không dấu). Sửa cả dòng tiêu đề phía trên cho khớp.
-> Template chi tiết và prompt mẫu cho từng mục: [docs/01-worksheet.md](../../docs/01-worksheet.md).
-> Mỗi thành viên một file trong `report/individual/` trên repo nhóm: copy template này thành file mới, điền, rồi commit bằng tài khoản GitHub của bạn. Không viết hộ người khác.
 
 ## 1. Thông tin học viên
 
@@ -152,16 +149,6 @@ Quy trình nháp hiện tại:
 
 ---
 
-### Card muốn pitch nhất
-
-- Card số: Card #1 (Tự động benchmark và đánh giá LLM/Prompt trên tập golden dataset)
-- Vì sao: Đây là bài toán sống còn với bất kỳ sản phẩm AI nào trước khi đưa ra người dùng. Hiện tại việc đánh giá đa số làm bằng mắt và cảm tính nên tốc độ ra mắt tính năng rất chậm. Bài toán này có ranh giới rõ ràng, dễ đo lường bằng con số cụ thể, và nhóm có thể tận dụng nhiều thư viện mã nguồn mở có sẵn để dựng giải pháp hoàn chỉnh trong các checkpoint sau.
-- Câu hỏi muốn nhóm phản biện:
-  1. Chi phí gọi API mô hình để thẩm định tự động (LLM-as-a-judge) có bị đội lên quá cao khi tập test case mở rộng lên 500-1000 câu không?
-  2. Trong trường hợp mô hình đánh giá và mô hình được đánh giá cùng gặp một loại ảo giác (bias chung), làm thế nào để phát hiện ra sai sót mà không cần người can thiệp?
-
----
-
 ### AI đã phản biện card thế nào
 
 | Điểm yếu AI chỉ ra | Đồng ý? | Đã sửa gì |
@@ -171,18 +158,20 @@ Quy trình nháp hiện tại:
 | Card #2 chưa làm rõ vai trò của bên phi kỹ thuật (CS/PM), nếu chỉ giải quyết cho kỹ sư thì chưa tối ưu hết chuỗi giá trị. | Đồng ý | Đã bổ sung phương án Không dùng AI: xây dựng dashboard tra cứu tự phục vụ để CS có thể tự xem ngữ cảnh lỗi mà không cần tag kỹ sư. |
 ## 4. Tôi đã tham gia phần nào (CP3 → CP7)
 
+**Vai trò chính:** phụ trách CP5 — quy trình trước/sau và Problem Statement v0; hỗ trợ CP4 theo [phân công nhóm](../../TEAM.md#phân-công-theo-checkpoint). Vũ Đức Anh hỗ trợ phần quy trình CP5. CP6 do Trương Văn Thông phụ trách, Nguyễn Đắc Thể hỗ trợ.
+
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Chuẩn bị 3 card về kiểm thử model/prompt, truy vết lỗi và quản lý phiên bản prompt ở CP2. | Ba card được tổng hợp thành candidate #1–#3 trong báo cáo nhóm; candidate #1 vào shortlist. |
+| Phản biện bài của bạn khác | Câu hỏi đối chiếu cho candidate #7 của Đức Anh: “Điểm nghẽn do tài liệu phân tán hay chưa đọc đúng thứ tự? Nếu dùng bảng đầu việc thủ công thì thời gian và số yêu cầu bỏ sót thay đổi thế nào?” Với candidate #4 của Thể: “Bước nhập chỉ chiếm 2/6 phút thì đạt mục tiêu 3 phút/đơn bằng cách nào?” | Câu hỏi #7 định hướng kiểm tra nguyên nhân nghẽn và thử No AI; phù hợp với kết luận pilot bảng tham chiếu ở CP6. Câu hỏi #4 yêu cầu đối chiếu mức tiết kiệm kỳ vọng với thời gian thực tế của bước nhập. Nguồn: [bảng 12 candidate, mục 2.1](../team/group_report.md#21-pitch); bảng ghi câu hỏi chuẩn bị, chưa xác định ai đã hỏi trực tiếp. |
+| Nhận phản biện | Các câu hỏi dành cho card của tôi trong [bảng 12 candidate](../team/group_report.md#21-pitch): **#1:** “Nếu giữ cùng một bộ ca và tính cả thời gian người rà, mức tiết kiệm còn bao nhiêu? Dùng tiêu chí nào để phát hiện trường hợp mô hình chấm sai?” **#2:** “Log hiện có đủ mã phiên, prompt và tài liệu truy xuất không? Nếu trình bày log rõ hơn bằng dashboard thì còn bước nào cần AI?” **#3:** “Khó khăn chính là mất phiên bản hay đánh giá chất lượng đầu ra? Lưu metadata bằng Git và bảng kết quả đã đủ chưa?” | Điểm cần làm rõ: #1 đo trên cùng bộ ca và tính cả công người rà; #2 xác nhận dữ liệu log trước khi chọn cách xử lý; #3 tách lưu phiên bản khỏi đánh giá chất lượng, thử Git/bảng kết quả trước. Đây là các điểm cần rà từ câu hỏi chuẩn bị; chưa gán người hỏi hoặc khẳng định đã sửa card sau pitch. |
+| Gom cluster / cây OST | Đối chiếu các card cá nhân với bảng cluster và cây OST do Nguyễn Đắc Thể tổng hợp. | [Mục 2.2](../team/group_report.md#22-cluster-và-chọn-top-3) xếp các card của tôi vào cluster A; [mục 2.3](../team/group_report.md#23-opportunity-solution-tree-rút-gọn) phân biệt pain dò chéo tài liệu với giải pháp. |
+| Chọn candidate problem | Ba card cá nhân là đầu vào để so sánh; phần CP5 của tôi tiếp nối candidate #7 đã được nhóm chọn. | Bài nhóm chọn bài toán tra cứu yêu cầu lab; không tiếp tục triển khai bài toán eval cá nhân trong phạm vi lab này. |
+| Kiểm chứng / research | Hỗ trợ CP4 theo phân công TEAM.md; dùng 2 snapshot và kết luận research của Đức Anh làm đầu vào CP5. Không ghi mình là người trực tiếp phỏng vấn. | [Mục 3.2](../team/group_report.md#32-kiểm-chứng) và hai snapshot hỗ trợ xác định phạm vi CP1–CP2; số 15–20 phút vẫn là tự thuật, chưa bấm giờ. |
+| Quy trình nhóm | Phụ trách tổng hợp quy trình trước/sau ở CP5; mô tả actor, input, output, thời gian, handoff, bottleneck và fallback. | [Mục 4.1](../team/group_report.md#41-quy-trình-hiện-tại), [4.2](../team/group_report.md#42-quy-trình-tương-lai) và [4.3](../team/group_report.md#43-before--after) mô tả đủ các bước, HITL/fallback và bảng so sánh; tính cả công chuẩn bị, duyệt, sửa lỗi, giữ thời gian từng bước là ước lượng. |
+| Problem Statement | Phụ trách tổng hợp v0 theo 6 trường và các điểm cần rà về baseline, metric, boundary. | [Mục 5 — v0](../team/group_report.md#5-problem-statement-v0-cp5) tạo đầu vào cho [mục 7 — v1](../team/group_report.md#7-problem-statement-v1--tiêu-chí-đánh-giá-cp6); baseline tự thuật 15–20 phút tách khỏi target pilot chưa đo. |
+| Mức can thiệp AI | Đóng góp quy trình và phân tích chi phí kiểm duyệt ở CP5; CP6 do Thông phụ trách, Thể hỗ trợ. | [Mục 6.2](../team/group_report.md#62-so-sánh-4-mức) chọn No AI cho pilot; v1 không có điểm can thiệp AI. Phương án Rule/Workflow ở CP5 chỉ để so sánh, chưa triển khai. |
+| Quyết định | Cung cấp metric, boundary và phương án quay về trong CP5 làm đầu vào đánh giá của nhóm. | [Mục 8.2](../team/group_report.md#82-kết-luận) đề xuất Go cho pilot ≥3 học viên ngoài nhóm; dừng nếu trung vị >8 phút/người, tổng công sức >40 người-phút/nhóm 4 người hoặc có 1 lỗi nghiêm trọng. Quyết định còn chờ nhóm xác nhận trước khi thực hiện. |
 
 ---
 
@@ -190,35 +179,58 @@ Quy trình nháp hiện tại:
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP1 Scan | Chưa có nhật ký đủ để xác nhận mức hỗ trợ ở CP1. | Không bổ sung nội dung dùng AI khi chưa có ghi chép. | Không có ghi nhận cụ thể. | Giữ các vấn đề đã có; các con số là mô tả cá nhân, không bổ sung bằng chứng giả. |
+| CP2 Problem Card | Phản biện phạm vi và phương án trong các card theo bảng cuối mục 3. | Nêu vấn đề độ phức tạp của Agent, độ tin cậy khi chấm và cách CS tra cứu. | Tăng số ca lên hơn 200 không tự chứng minh tập ca đại diện; chỉ đổi target chưa giải quyết chất lượng eval. | Cần bổ sung nhóm ca thường gặp/ca biên và so kết quả với người chấm; đây là việc tiếp theo, chưa có kết quả thực nghiệm. |
+| CP4 Research | Dùng kết quả research có sẵn trong báo cáo nhóm để đối chiếu quy trình CP5. | So sánh hướng bảng thủ công, Rule và Workflow. | Một số claim trong research như script chính xác 100% hoặc chạy dưới 1 giây chưa có phép đo của nhóm. | Không dùng các claim đó làm kết quả kiểm chứng; vẫn yêu cầu người rà nguồn và ghi thời gian thực tế. |
+| CP5 Quy trình | Hỗ trợ tổng hợp, trình bày và phản biện quy trình từ worksheet và CP4. | Tách Rule/AI/con người, công chuẩn bị chung, boundary và fallback. | Mốc 15–20 phút chưa thống nhất cách ghi; thời gian duyệt 3 phút và target 8 phút chưa đo. | Bản CP5 phân biệt tự thuật, ước lượng và target; cần bấm giờ lại trước khi kết luận hiệu quả. |
+| CP5–6 Problem Statement | Hỗ trợ soạn và phản biện v0; đối chiếu với v1 trong báo cáo nhóm mới nhất. | Chỉ ra baseline chưa vững, mẫu nhỏ, chi phí người duyệt và việc chưa chứng minh cần AI. | Đầu ra nháp không thay thế việc nhóm tự xác nhận nội dung hoặc bằng chứng pilot. | V1 của nhóm chọn No AI, giới hạn CP1–CP2 và ghi tiêu chí đo; không coi đây là kết quả đã đạt. |
+| CP6 Mức can thiệp / quyết định | Đối chiếu báo cáo cá nhân với kết luận CP6 đã được Thông và Thể tổng hợp. | Làm rõ Go chỉ áp dụng cho pilot, cùng ngưỡng dừng và cách quay về nguồn. | Dễ nhầm No AI của giải pháp với việc không dùng AI hỗ trợ làm báo cáo. | Nhật ký này vẫn ghi việc hỗ trợ soạn/phản biện; giải pháp pilot được chọn không có điểm can thiệp AI. |
 
 ---
 
 ## 6. Reflection (CP7)
 
-Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
 
-**6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+Từ bảng tổng hợp candidate, điều tôi rút ra là vấn đề có tác động lớn chưa chắc phù hợp nhất để làm trong một buổi lab. Card kiểm thử model/prompt của tôi có bước chấm thủ công tốn thời gian, nhưng còn phụ thuộc bộ ca, đáp án và độ tin cậy của người chấm. Bài toán tra cứu yêu cầu lab có nguồn ngay trong repo và tiếp cận được người cùng bối cảnh, nên thuận lợi hơn cho việc kiểm chứng. Điều này giúp tôi hiểu vì sao nhóm ưu tiên một vấn đề có thể kiểm chứng ngay trong lớp.
+
+**6.2. Nhóm có lúc nào bị "solution-first" không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+
+Phần quy trình tương lai ở CP5 có phương án dùng Rule gom yêu cầu và AI tóm tắt hướng dẫn. Tuy nhiên, hai cuộc phỏng vấn mới cho thấy học viên phải dò chéo tài liệu, chưa cho thấy họ cần AI để giải quyết việc đó. CP6 vì thế chọn thử bảng tham chiếu No AI trước. Từ điểm này, tôi rút ra rằng phải kiểm tra cách tổ chức thông tin đơn giản đã đủ chưa, rồi mới cân nhắc thêm công cụ.
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
 
-**6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+Một thay đổi đã ghi trong CP2 là thu hẹp phương án kiểm thử từ Agent sang Workflow gồm script chạy ca thử, bước chấm theo rubric và người duyệt. Câu hỏi dành cho candidate #1 trong bảng nhóm còn chỉ ra một điểm cần rà: nếu giữ cùng bộ ca và tính cả thời gian người kiểm tra thì mức tiết kiệm thực sự là bao nhiêu? Khi tổng hợp CP5, tôi dùng cùng cách xem xét đó để tính cả công chuẩn bị và duyệt bảng. Mục tiêu nhanh hơn chỉ có ý nghĩa khi so cùng phạm vi công việc.
+
+**6.4. Kết quả kiểm chứng có làm tôi bất ngờ không? Điều gì?**
+
+Điểm đáng chú ý trong hai snapshot là học viên chỉ đọc README khoảng 5–6 phút rồi vẫn phải quay lại đối chiếu Rubric và Rules trong lúc làm. Vấn đề vì thế không chỉ là đọc hiểu đầu buổi mà còn là tìm đúng điều kiện ở từng mục. Hai người cùng nêu khoảng 15–20 phút hỗ trợ nhận diện hành vi, nhưng cách ghi thời gian chưa đủ rõ để coi là phép đo chính xác.
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 
+Trong phần CP5 tôi phụ trách, điểm khó là mô tả rõ vấn đề mà chưa chốt sẵn giải pháp. Chẳng hạn, “phải dò chéo nhiều file để biết đủ yêu cầu” là bước nghẽn; “cần bảng tổng hợp bằng AI” đã là một phương án xử lý. Phần metric cũng cần tách khoảng 15–20 phút do người được hỏi tự ước lượng, 7 phút mô hình hóa cho bước nghẽn và target muốn thử. Boundary phải chỉ ra ai duyệt, kiểm nội dung gì và khi nào quay về nguồn gốc.
+
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 
-**6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+Tôi sẽ đề xuất thống nhất phạm vi đo ngay trước phỏng vấn: tổng thời gian đọc–đối chiếu CP1–CP2 hay riêng thời gian chuyển qua lại tài liệu. Tôi cũng sẽ ghi rõ từng câu hỏi phản biện, người hỏi và thay đổi sau đó để tránh thiếu bằng chứng đóng góp cá nhân. Khi so giải pháp, cần thử bảng thủ công trước, đo cả công chuẩn bị, sửa lỗi và quay về nguồn rồi mới cân nhắc Rule hoặc Workflow.
+
+**6.7. Hiểu bài — bản giải thích tham khảo để tự luyện, chưa phải kiểm tra không nhìn tài liệu:**
+
+Bài toán của nhóm là học viên K5-L3A phải dò chéo nhiều file để xác định đủ nhiệm vụ, vị trí điền và điều kiện chấm khi làm CP1–CP2. Quy trình hiện tại đi từ đọc README, tìm checkpoint, đọc worksheet đến đối chiếu Rubric/Rules và lập đầu việc. Bottleneck nằm ở bước đối chiếu; khoảng 15–20 phút là số tự thuật cho lượt đọc–tra cứu, còn 7 phút riêng bước nghẽn là ước lượng. Pilot đặt mục tiêu trung vị không quá 8 phút/người và tổng công sức nhóm 4 người không quá 40 người-phút, tính cả chuẩn bị và duyệt. Bảng phải có nguồn, phiên bản và người kiểm tra; thiếu hoặc mâu thuẫn thì quay về tài liệu gốc. Nhóm chọn No AI vì chưa chứng minh Rule hay AI cần thiết hơn bảng tham chiếu thủ công. Quyết định là Go cho pilot ít nhất 3 học viên ngoài nhóm; vượt ngưỡng thời gian/công sức hoặc xuất hiện lỗi nghiêm trọng thì dừng và sửa trước khi thử lại.
 
 ---
 
 ## 7. Tài liệu tham khảo
 
--
+- [Worksheet — CP5](../../docs/01-worksheet.md#cp5--quy-trình-trướcsau--problem-statement-v0-45--define).
+- [Yêu cầu checkpoint](../../CHECKPOINTS.md).
+- [Rubric — C8 và C9](../../RUBRIC.md).
+- [Quy định dùng AI](../../RULES.md#2-ai-và-công-cụ).
+- [TEAM.md — phân công và bằng chứng đóng góp](../../TEAM.md#dinhthihuong-2a202603569).
+- [Bảng 12 candidate và câu hỏi chuẩn bị phản biện](../team/group_report.md#21-pitch).
+- [Báo cáo nhóm — CP4, CP5 và kết luận CP6](../team/group_report.md).
+- [Problem Statement v1 và tiêu chí đánh giá](../team/group_report.md#7-problem-statement-v1--tiêu-chí-đánh-giá-cp6).
+- [Quyết định, pilot và ngưỡng dừng](../team/group_report.md#82-kết-luận).
+- [Interview Snapshot #1 — Vũ Đức Anh](../assets/cp4-interview-snapshot-1.md).
+- [Interview Snapshot #2 — Vũ Đức Anh](../assets/cp4-interview-snapshot-2.md).

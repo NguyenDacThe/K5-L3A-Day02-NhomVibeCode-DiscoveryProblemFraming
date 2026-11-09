@@ -78,38 +78,11 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
-- Xây dựng bảng Assumption Map gồm 6 giả định phân loại theo Value, Usability, Feasibility, Viability và xác định 4 giả định ưu tiên kiểm chứng.
-- Thiết kế bộ 4 câu hỏi phỏng vấn tuân thủ _The Mom Test_, trực tiếp phỏng vấn 2 học viên nhóm khác trong lớp K5-L3A, lập bảng Interview Snapshot #1 và #2 và phân tích tín hiệu xác nhận / phản bác để điều chỉnh phạm vi bottleneck của nhóm.
-- Thực hiện Research 4 công cụ/pattern thực tế (Google NotebookLM, GitHub Copilot Repository Context, Diátaxis Documentation Framework, Unified/Remark Markdown AST) kèm kiểm tra link sống và rút ra kết luận chuyển hướng từ "tự xây công cụ AI" sang quy trình bán thủ công kết hợp bảng Cheatsheet/Rule và công cụ có sẵn.
+-
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
-- [Mục 3.1 — Assumption Map](report/team/group_report.md#31-assumption-map).
-- [Mục 3.2 — Kiểm chứng và điều chỉnh problem](report/team/group_report.md#32-kiểm-chứng).
-- [Mục 3.3 — Research giải pháp đã có](report/team/group_report.md#33-research-giải-pháp-đã-có).
-- File ghi chú phỏng vấn chi tiết: [report/assets/cp4-interview-snapshot-1.md](report/assets/cp4-interview-snapshot-1.md), [report/assets/cp4-interview-snapshot-2.md](report/assets/cp4-interview-snapshot-2.md).
-
-**Điều mình học được từ phần nhóm:**
-
-- Khi đưa problem cá nhân ra nhóm phản biện và đi phỏng vấn người thật ở nhóm khác, mình nhận ra giả định ban đầu ("ai cũng ngồi đọc một mạch 25 phút đầu giờ") chưa sát thực tế bằng việc học viên chỉ đọc `README.md` 5–6 phút rồi mất 15–20 phút mở qua mở lại giữa `RUBRIC.md` và `RULES.md` vì sợ sót yêu cầu nhỏ. Nhờ kiểm chứng và research, nhóm tránh được bẫy tự xây chatbot/Agent thừa thãi.
-
-### DinhThiHuong-2A202603569
-
-**Phần việc phụ trách:**
-
-- Phụ trách tổng hợp CP5 theo worksheet và kết quả kiểm chứng CP4.
-
-**Đóng góp cụ thể:**
-
-- Đối chiếu CP5 với [snapshot #1](report/assets/cp4-interview-snapshot-1.md) và [snapshot #2 của Đức Anh](report/assets/cp4-interview-snapshot-2.md); phân biệt số tự thuật, thời gian phân bổ ước lượng và mục tiêu pilot.
-- Tổng hợp nội dung CP5 trên bản báo cáo nhóm từ nhánh `DucAnh` (commit `143e664`), đồng bộ asset và các file liên quan.
-- Phần việc CP5 gồm quy trình trước/sau, actor/input/output, thời gian ước lượng, handoff, bước người kiểm tra, boundary, phương án quay về và bảng before/after.
-- Tổng hợp Problem Statement v0 và các điểm cần rà về baseline, chi phí duyệt, mẫu kiểm chứng và nhu cầu AI để nhóm chốt.
-
-**Bằng chứng:**
-
-- [Báo cáo nhóm mục 4–5](report/team/group_report.md#4-quy-trình-trướcsau-cp5).
-- [Báo cáo cá nhân mục 4–5](report/individual/2A202603569_DinhThiHuong.md#5-dùng-ai).
+-
 
 **Điều mình học được từ phần nhóm:**
 
