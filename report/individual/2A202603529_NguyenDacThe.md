@@ -178,49 +178,77 @@ Bảng dưới ghi kết quả phản biện và chỉnh sửa bản phân tích
 
 ## 4. Tôi đã tham gia phần nào (CP3 → CP7)
 
+**Vai trò chính:** phụ trách CP3 — hội tụ nhóm; hỗ trợ Trương Văn Thông ở CP6. Ba card doanh nghiệp ở mục 3 là candidate cá nhân; phần nhóm chọn **candidate #7 của Đức Anh — Tra cứu và đối chiếu yêu cầu đầu buổi lab**. Số thứ tự candidate trong báo cáo nhóm khác số thứ tự bảng scan cá nhân.
+
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Đưa 3 card cá nhân về nhập đơn hàng, đối chiếu công nợ và tra lịch sử khách hàng vào danh sách tổng hợp; phụ trách nối 3 card của mỗi thành viên thành bảng 12 candidate. | Ba card của tôi tương ứng #4–#6 tại [bảng pitch nhóm](../team/group_report.md#21-pitch); có actor và bước nghẽn để so sánh với các hướng khác. |
+| Phản biện bài của bạn khác | Chuẩn bị câu hỏi cho candidate #7: “Điểm nghẽn do tài liệu phân tán hay chưa đọc đúng thứ tự? Nếu dùng bảng đầu việc thủ công thì thời gian và số yêu cầu bỏ sót thay đổi thế nào?” Với #1, đặt vấn đề giữ cùng bộ ca và tính cả thời gian người rà khi so sánh. | Các câu hỏi được ghi là **câu hỏi chuẩn bị cho pitch**, hướng phân tích về nguyên nhân, baseline và phương án đơn giản. Báo cáo chưa ghi nhận câu nào đã được hỏi trực tiếp bởi tôi. |
+| Nhận phản biện | Câu hỏi gắn với card nhập đơn của tôi tại bảng 2.1: “Bước nhập chỉ chiếm 2/6 phút thì đạt mục tiêu 3 phút/đơn bằng cách nào?” Bảng nhóm chưa ghi ai thực sự hỏi hoặc thời điểm nhận, nên chưa xem đây là nhật ký phản biện trực tiếp. | Khi rà card, cần tính cả các bước đọc, đối chiếu và kiểm tra; không quy toàn bộ mức giảm tổng thời gian cho riêng nhập liệu. Giữ mục tiêu 3 phút/đơn ở trạng thái giả thuyết thử nghiệm, chưa khẳng định đã đạt. |
+| Gom cluster / cây OST | Tổng hợp 4 cluster: chất lượng mô hình, vận hành doanh nghiệp, công việc học tập và hoạt động cá nhân; xây OST cho candidate #7. | [Mục 2.2–2.3](../team/group_report.md#22-cluster-và-chọn-top-3) phân biệt pain dò chéo tài liệu với solution như chatbot hoặc checklist tự động; các nhánh OST đều hướng vào nhu cầu. |
+| Chọn candidate problem | Tổng hợp shortlist #7, #8, #1 và bảng điểm 7 tiêu chí; ghi lý do chọn/loại. | [Mục 2.4](../team/group_report.md#24-chấm-điểm-shortlist-15) đề xuất chọn #7 với 33/35 điểm, so với #8 là 32/35 và #1 là 26/35. Không dùng số phút lớn nhất làm tiêu chí duy nhất. |
+| Kiểm chứng / research | Đối chiếu nội dung tổng hợp với 2 snapshot phỏng vấn do Đức Anh thực hiện và kết luận research CP4; xem tác động của bằng chứng đến phạm vi nhóm đã chọn. | [Snapshot #1](../assets/cp4-interview-snapshot-1.md) và [#2](../assets/cp4-interview-snapshot-2.md) cho thấy học viên đọc README rồi tiếp tục dò chéo khi làm CP1–CP2. Vai trò phỏng vấn chính thuộc Đức Anh; đóng góp của tôi ở đây là rà và sử dụng kết quả cho lập luận nhóm. |
+| Quy trình nhóm | Rà sự liên kết giữa candidate CP3 và quy trình trước/sau do Hường phụ trách ở CP5, đặc biệt bước đối chiếu, người duyệt và phương án quay về. | Phân biệt mốc mô hình 20 phút/người, bước đối chiếu 7 phút ước lượng và thời gian tự thuật 15–20 phút. Tính cả chuẩn bị, kiểm tra và sửa lỗi khi so tổng công sức. |
+| Problem Statement | Hỗ trợ Thông rà v1 với v0: actor, phạm vi CP1–CP2, metric, boundary và điểm can thiệp. | [Mục 7 báo cáo nhóm](../team/group_report.md#7-problem-statement-v1--tiêu-chí-đánh-giá-cp6) ghi đủ 9 trường, không có điểm can thiệp AI trong pilot và có bảng giải thích thay đổi so với v0. |
+| Mức can thiệp AI | Hỗ trợ rà so sánh No AI / Rule / Workflow / Agent và lý do chọn mức đơn giản nhất. | [Mục 6](../team/group_report.md#6-mức-can-thiệp-ai-cp6) chọn No AI cho pilot; phần Rule/Workflow trong CP5 được giữ là phương án thiết kế để xem xét tiếp khi có bằng chứng. |
+| Quyết định | Hỗ trợ rà mức độ 4 rủi ro, điều kiện Go, kế hoạch thử và ngưỡng dừng; đối chiếu với TEAM.md. | [Mục 8](../team/group_report.md#8-quyết-định-cp6) chỉ Go cho pilot nhỏ: trung vị ≤8 phút/người, tổng ≤40 người-phút/nhóm 4 người và 0 lỗi nghiêm trọng. Chưa có kết quả pilot để tuyên bố hiệu quả. |
+
+**Bằng chứng đóng góp:** [phần Nguyễn Đắc Thể trong TEAM.md](../../TEAM.md#nguyendacthe-2a202603529), mục 2 của báo cáo nhóm và vai trò hỗ trợ ở mục 6–8. Cột câu hỏi trên giữ đúng trạng thái chuẩn bị trong tài liệu nguồn, không gán thêm người hỏi hoặc sự kiện thảo luận chưa được ghi nhận.
 
 ---
 
 ## 5. Dùng AI
 
+| Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Nội dung được điều chỉnh / cách kiểm lại |
+|---|---|---|---|---|
+| CP2 Chọn top 3 Problem Cards | Nhờ AI phân tích 10 candidate tôi đã nghĩ ra, so sánh và đề xuất 3 vấn đề quan trọng nhất để phát triển thành card | So sánh actor, bottleneck, impact, khả năng đo và phạm vi; làm rõ lý do ưu tiên nhập đơn, đối chiếu công nợ và tra lịch sử khách hàng | Xếp hạng chỉ dựa trên mô tả đầu vào, chưa xác nhận pain ở doanh nghiệp. Mục tiêu nhập đơn từ 6 xuống 3 phút cần xét cả quy trình, không chỉ bước nhập 2 phút | Đối chiếu lý do chọn với từng card; giữ phương án không dùng AI và yêu cầu đo toàn bộ thời gian, công kiểm tra cùng tỉ lệ phải sửa |
+| CP3 Tổng hợp bảng candidate nhóm | Nhờ AI đọc 4 báo cáo cá nhân, lấy 3 card quan trọng mỗi thành viên đã chọn và gộp vào bảng candidate trong báo cáo nhóm cho nhanh; tiếp tục hỗ trợ tổ chức bản tổng hợp | Giảm thao tác sao chép, rút gọn Job Story và trình bày nhất quán 12 dòng, đúng người đề xuất, actor và bottleneck | Tổng hợp nhanh vẫn có thể làm mất ý khi rút gọn; câu hỏi chuẩn bị không chứng minh đã có buổi pitch hoặc người hỏi cụ thể | Rà bảng theo báo cáo từng người, giữ đúng 3 card/người; không để AI chọn lại card thay thành viên và không gán câu hỏi chuẩn bị thành phản biện đã xảy ra |
+| CP7 Reflection | Nhờ AI hỗ trợ soạn và diễn đạt phần reflection cho các câu 6.1–6.6 trên 200 từ, dựa trên báo cáo nhóm, TEAM.md và phần việc CP3, hỗ trợ CP6 | Sắp xếp nội dung theo từng câu hỏi, liên kết đóng góp với bài học và bảo đảm độ dài yêu cầu | AI không biết đầy đủ trải nghiệm cá nhân; dễ viết chung chung hoặc suy diễn cảm xúc, câu hỏi và sự kiện chưa được ghi nhận | Rà lại từng ý theo trải nghiệm thực tế và bằng chứng trong bài nhóm; chỉnh cách diễn đạt cho phù hợp, loại chi tiết chưa xác nhận; không coi đủ số từ là đã phản ánh đúng trải nghiệm |
+
 ---
 
 ## 6. Reflection (CP7)
 
-Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
+Bản diễn đạt dưới đây được tổng hợp từ công việc CP3, phần hỗ trợ CP6, nội dung TEAM.md và báo cáo nhóm; cách dùng AI đã ghi tại mục 5. Các câu 6.1–6.6 tập trung vào thay đổi trong lập luận và sản phẩm có thể đối chiếu, không bổ sung sự kiện ngoài tài liệu nguồn.
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
 
+Từ các card của Hường, Đức Anh và Thông, tôi thấy cùng một yêu cầu “giảm thời gian” có thể liên quan đến các công việc rất khác: chấm kết quả mô hình, dò quy định bài lab hoặc đọc tài liệu tiếng Anh. Khi tổng hợp 12 candidate, điều cần so sánh là actor, quy trình, bằng chứng và khả năng kiểm chứng trong thời gian lab. Ba card doanh nghiệp của tôi có quy trình cụ thể nhưng số liệu là tình huống minh họa; chúng không mạnh hơn một vấn đề có thể quan sát ngay chỉ vì con số tác động lớn. Candidate #7 của Đức Anh có tài liệu đầu vào và người dùng cùng bối cảnh để tiếp cận, nên phù hợp hơn cho bước đào sâu. Tôi cũng hiểu rằng phần cá nhân có thể khác đề tài cuối của nhóm; đóng góp của mình còn nằm ở việc tổng hợp và giúp lựa chọn có căn cứ.
+
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+
+Trong các phương án được ghi lại, có hướng dùng chatbot, Agent hoặc Workflow để tổng hợp tài liệu. Nếu đưa các tên giải pháp đó vào tầng opportunity, nhóm sẽ chốt công nghệ trước khi biết pain chính nằm ở đâu. Khi xây OST cho #7, tôi tách việc “phải dò chéo nhiều file để biết đủ yêu cầu” khỏi cách giải như checklist hay chatbot. Kết quả CP4 làm phạm vi rõ hơn: người học đọc README để nắm khung rồi tiếp tục tra điều kiện khi làm từng CP. Vì vậy, CP6 chọn thử bảng tham chiếu No AI trước. Hướng chuyển này cho thấy cần chứng minh giá trị của cách tổ chức thông tin trước khi thêm phần tạo nội dung bằng mô hình.
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
 
+Một thay đổi cụ thể trong cách đánh giá card là không chỉ nhìn tổng thời gian và target. Card nhập đơn của tôi đặt mục tiêu từ 6 xuống 3 phút, nhưng riêng bước nhập chỉ chiếm 2 phút. Câu hỏi chuẩn bị phản biện ở mục 2.1 báo cáo nhóm chỉ ra rằng giảm bước nhập chưa đủ để giải thích toàn bộ mục tiêu; còn phải xét bước đọc, tra danh mục và kiểm tra lại. Vì thế, khi rà lập luận, tôi nhìn target như giả thuyết cần thử, yêu cầu tính cả công duyệt và lỗi sau tạo đơn. Báo cáo nhóm chưa ghi ai thực sự đã đặt câu hỏi này trong buổi pitch, nên tôi không gán một cuộc trao đổi trực tiếp cho thành viên nào. Bài học ở đây là mọi mức giảm kỳ vọng phải nối được với các bước thực sự thay đổi.
+
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+
+Điểm đáng chú ý trong hai snapshot do Đức Anh thực hiện là người học không đọc liền toàn bộ tài liệu rồi mới làm bài. Họ đọc README khoảng 5–6 phút, sau đó tiếp tục mở các file quy định khi làm CP1–CP2. Chi tiết này làm cách mô tả problem chuyển từ “đọc tài liệu lâu đầu buổi” sang “dò chéo và lo thiếu điều kiện trong lúc làm”. Tôi còn thấy thời gian 15–20 phút được ghi chưa hoàn toàn thống nhất giữa câu trả lời và câu trích dẫn, nên chưa thể coi đó là phép đo độc lập hoặc cộng thêm thời gian đọc README một cách máy móc. Research cũng gợi hướng tổ chức bảng tham chiếu, khiến việc dùng AI trở thành một giả thuyết phải chứng minh thêm.
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 
+Điểm khó nhất là giữ actor, phạm vi, bottleneck và metric cùng nói về một công việc. Bằng chứng CP4 hỏi về CP1–CP2 thì v1 không nên tuyên bố giải quyết toàn bộ CP0–CP7. Mốc 7 phút của bước đối chiếu là phân bổ ước lượng, còn 15–20 phút là tự thuật; hai loại số này cần ghi rõ. Khi hỗ trợ Thông rà CP6, tôi đối chiếu mục tiêu trung vị ≤8 phút/người với tổng ≤40 người-phút cho nhóm 4 người, đồng thời giữ tiêu chí 0 lỗi nghiêm trọng. Nếu bảng khiến người dùng đọc nhanh nhưng mất thêm nhiều công chuẩn bị hoặc bỏ sót quy định thì chưa đạt. Boundary và cách quay về nguồn cần rõ ngay cả khi phương án được chọn không dùng AI.
+
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 
+Tôi sẽ chuẩn bị bảng so sánh ngắn theo 7 tiêu chí sớm hơn, kiểm tra nguồn của baseline trước khi xếp hạng và tách rõ ví dụ minh họa khỏi dữ liệu thật. Tôi cũng sẽ ghi nhật ký câu hỏi ngay khi thảo luận: ai hỏi, hỏi gì, trả lời thế nào và điều gì thay đổi, để không phải suy từ các câu hỏi chuẩn bị sang một sự kiện chưa được ghi nhận. Với problem đã chọn, tôi sẽ yêu cầu bấm giờ cùng phạm vi CP1–CP2, tính cả người soạn và người duyệt, rồi thử bảng No AI trước. Câu tôi muốn phản biện mạnh hơn là: “Nếu bảng thủ công đã đủ, vì sao cần AI; nếu chưa đủ, chính xác bước nào còn nghẽn?” Sau đó mới xem xét mức phức tạp hơn dựa trên dữ liệu pilot.
+
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+
+Vấn đề nhóm chọn là học viên K5-L3A phải dò chéo nhiều tài liệu để biết đủ nhiệm vụ, vị trí điền và điều kiện của CP1–CP2. Quy trình hiện tại là đọc README, tìm checkpoint, đọc worksheet, đối chiếu Rubric/Rules rồi rà đầu việc; bottleneck là bước đối chiếu lặp lại. Hai snapshot ghi thời gian tự thuật 15–20 phút/người, còn target pilot là trung vị không quá 8 phút/người, tổng công sức nhóm 4 người không quá 40 người-phút và không có lỗi nghiêm trọng. Boundary yêu cầu bảng có nguồn, phiên bản và người duyệt, không thay đề gốc hay làm bài/nộp thay học viên. Nhóm chọn No AI vì chưa có bằng chứng Rule hoặc Workflow mang thêm giá trị so với bảng tham chiếu thủ công. Quyết định là Go cho pilot nhỏ với ít nhất 3 học viên ngoài nhóm, chưa phải triển khai rộng. Nếu vượt ngưỡng thời gian, tổng công sức hoặc có một lỗi nghiêm trọng thì dừng chia sẻ bản đã xác nhận, quay về nguồn và chỉ thử lại sau khi sửa có kiểm tra.
 
 ---
 
 ## 7. Tài liệu tham khảo
 
-- [Rules — giới hạn dùng AI và liêm chính](../../RULES.md).
-- [Checkpoints — yêu cầu CP0, CP1, CP2](../../CHECKPOINTS.md).
-- [Worksheet — cách scan và viết Problem Card](../../docs/01-worksheet.md).
-- [Bài làm mẫu — chỉ tham khảo phương pháp](../../docs/02-deliverable-example.md).
-- [Rubric — tiêu chí C1 và C2](../../RUBRIC.md).
+- [Báo cáo nhóm — nguồn chính cho phần hội tụ, kiểm chứng, v0/v1 và quyết định](../team/group_report.md).
+- [TEAM.md — vai trò phụ trách CP3 và hỗ trợ CP6 của Nguyễn Đắc Thể](../../TEAM.md#nguyendacthe-2a202603529).
+- [Interview Snapshot #1 — do Vũ Đức Anh thực hiện](../assets/cp4-interview-snapshot-1.md).
+- [Interview Snapshot #2 — do Vũ Đức Anh thực hiện](../assets/cp4-interview-snapshot-2.md).
+- [CHECKPOINTS.md — sản phẩm CP0–CP7 và cách tự kiểm](../../CHECKPOINTS.md).
+- [docs/01-worksheet.md — phương pháp làm từng checkpoint](../../docs/01-worksheet.md).
+- [docs/02-deliverable-example.md — tham khảo cấu trúc và cách lập luận](../../docs/02-deliverable-example.md).
+- [RUBRIC.md — yêu cầu nhật ký phản biện, reflection và hiểu bài, C3–C5](../../RUBRIC.md).
+- [RULES.md — nguyên tắc problem first, bằng chứng, sử dụng AI và dữ liệu](../../RULES.md).
