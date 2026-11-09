@@ -8,7 +8,7 @@
 - Tên nhóm: VibeCode
 - Thành viên: xem `TEAM.md`
 - Candidate problem được chọn (1 câu): Học viên K5-L3A mất thời gian tra cứu và đối chiếu yêu cầu đầu buổi lab vì nhiệm vụ, vị trí điền và tiêu chí chấm nằm ở nhiều tài liệu.
-- Quyết định cuối: Go / Not Yet / No-Go
+- Quyết định cuối (đề xuất CP6, chờ nhóm xác nhận): **Go — chỉ pilot quy trình No AI bằng bảng tham chiếu; chưa triển khai rộng hoặc kết luận đã đạt mục tiêu.**
 
 ---
 
@@ -334,38 +334,38 @@ Nguồn thay đổi → quay lại bước 1–4; không tiếp tục dùng bả
 
 ### 6.1. Ma trận độ mơ hồ × độ phức tạp
 
-Bài của nhóm nằm ở ô:
+Bài của nhóm nằm ở ô **độ mơ hồ thấp × độ phức tạp thấp** nếu giới hạn ở việc xác định nhiệm vụ, file/mục cần điền và tiêu chí bắt buộc cho CP1–CP2.
 
-Vì sao:
+**Vì sao:** nguồn là các tài liệu Markdown cố định, thông tin cần đối chiếu có cấu trúc và có thể kiểm tra đúng/sai trực tiếp theo nguồn. Quy trình không cần AI tự chọn bước tiếp theo hay xử lý nhiều hệ thống phụ thuộc lẫn nhau. Phần tóm tắt hướng dẫn dài có độ mơ hồ cao hơn, nhưng chưa có bằng chứng phần đó cần thiết để giải quyết bottleneck đã xác nhận.
 
 ### 6.2. So sánh 4 mức
 
 | Mức | Phương án cho bài của nhóm | Đủ khi nào | Rủi ro | Chọn? |
 |---|---|---|---|---|
-| **No AI** (sửa quy trình) | | | | |
-| **Rule** | | | | |
-| **Workflow** | | | | |
-| **Agent** | | | | |
+| **No AI** (sửa quy trình) | Một bảng tham chiếu theo CP do người phụ trách lập từ nguồn, có liên kết/heading, người duyệt và phiên bản. | Khi người học xác định đủ đầu việc, vị trí điền và điều kiện quan trọng trong mục tiêu thời gian; bảng được rà đúng nguồn. | Tốn công cập nhật; lỗi trong bảng có thể lan cho cả nhóm; phải quay về tài liệu gốc nếu thiếu hoặc không rõ. | **Chọn cho pilot** |
+| **Rule** | Script trích nguyên văn các heading/bảng cố định, gắn nguồn và đánh dấu mục không ghép được để người rà. | Chỉ cân nhắc nếu lập bảng thủ công lặp lại tốn công; phải kiểm tra được tính đầy đủ và phiên bản. | Cấu trúc tài liệu đổi có thể làm script bỏ sót hoặc ghép nhầm; chưa có script triển khai/đo. | Chưa chọn |
+| **Workflow** | Rule tạo bảng yêu cầu, AI viết nháp lưu ý từ worksheet có dẫn nguồn, người duyệt trước khi chia sẻ. | Chỉ cân nhắc nếu pilot cho thấy hướng dẫn dài vẫn là bottleneck sau khi bảng No AI đã được dùng. | AI có thể bỏ sót ngoại lệ hoặc diễn giải sai; thêm chi phí kiểm tra, dữ liệu nguồn và bảo trì prompt. | Chưa chọn |
+| **Agent** | AI tự tìm tài liệu, tự quyết định bước tra cứu và tạo bảng. | Chỉ phù hợp nếu có nhiều nguồn động, bước tiếp theo không xác định và có bằng chứng workflow cố định không đủ. | Khó kiểm soát nguồn, bỏ sót quy tắc, hành động ngoài phạm vi; không tương xứng bài toán hiện tại. | Không chọn |
 
-**Mức chọn:**
+**Mức chọn: No AI — pilot bảng tham chiếu thủ công theo CP, có người duyệt và đường dẫn nguồn.**
 
-**Vì sao không chọn mức đơn giản hơn:**
+**Vì sao không chọn mức phức tạp hơn:** No AI là mức đơn giản nhất. Hai snapshot xác nhận hành vi dò chéo tài liệu, nhưng chưa chứng minh Rule hay AI tạo thêm giá trị so với bảng tham chiếu. Chỉ nâng lên Rule/Workflow khi pilot cho thấy bảng thủ công không đạt mục tiêu hoặc chi phí cập nhật/chuẩn bị vượt ngưỡng; không chọn Agent vì không có nhu cầu tự quyết định bước tiếp theo.
 
 ### 6.3. AI Canvas rút gọn
 
 | Thành phần | Nội dung |
 |---|---|
-| **Prediction** — AI dự đoán / tạo ra gì? | |
-| **Judgment** — con người cân nhắc, quyết định gì? | |
-| **Action** — hành động cuối cùng là gì, ai làm? | |
-| **Outcome** — đo kết quả bằng gì? | |
-| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? | |
-| **Feedback** — lấy phản hồi ở đâu để cải thiện? | |
+| **Prediction** — AI dự đoán / tạo ra gì? | Không áp dụng: mức pilot được chọn là No AI, không có đầu ra do AI tạo. |
+| **Judgment** — con người cân nhắc, quyết định gì? | Người phụ trách chọn nội dung cần đưa vào bảng và đối chiếu từng yêu cầu với tài liệu gốc; học viên tự quyết định khi nào cần mở nguồn hoặc hỏi coach. |
+| **Action** — hành động cuối cùng là gì, ai làm? | Người phụ trách lập, ghi phiên bản và duyệt bảng; học viên dùng bảng để xác định đầu việc, không tự động sửa/nộp báo cáo. |
+| **Outcome** — đo kết quả bằng gì? | Thời gian tra cứu từng người, tổng thời gian chuẩn bị và sử dụng của nhóm, số yêu cầu bắt buộc bị thiếu/sai so với nguồn, và số lần quay về nguồn. Mục tiêu pilot ở mục 7. |
+| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? | Không có input cho AI. Bảng thủ công lấy từ `CHECKPOINTS.md`, `RUBRIC.md`, `RULES.md`, `SUBMISSION.md` và worksheet cùng phiên bản. |
+| **Feedback** — lấy phản hồi ở đâu để cải thiện? | Không huấn luyện AI. Ghi lỗi/điểm khó từ học viên pilot, sửa bảng có đối chiếu nguồn và lưu phiên bản; không dùng phản hồi thay cho kiểm tra tính chính xác. |
 
 ### 6.4. Hai câu hỏi của Google PAIR
 
-- Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? Bằng chứng:
-- AI sai kiểu nào tệ hơn, **báo nhầm** hay **bỏ sót**? Vì sao, và thiết kế đã xử lý thế nào:
+- Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? **Không áp dụng cho mức No AI.** Tín hiệu từ 2 snapshot chỉ ra người học cần tra cứu/đối chiếu; chưa có bằng chứng họ muốn giao việc này cho AI. Bảng là tài liệu hỗ trợ, quyết định cuối vẫn do người học và người duyệt.
+- AI sai kiểu nào tệ hơn, **báo nhầm** hay **bỏ sót**? Vì sao, và thiết kế đã xử lý thế nào: **Không áp dụng vì không dùng AI.** Với bảng tham chiếu, bỏ sót điều kiện bắt buộc nguy hiểm hơn một liên kết dư thừa; giảm rủi ro bằng cách đối chiếu checklist với nguồn, ghi phiên bản, và quay về tài liệu gốc khi nghi vấn.
 
 ---
 
@@ -373,29 +373,34 @@ Vì sao:
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** | |
-| **AI intervention point** | |
-| **Mức chọn** | No AI / Rule / Workflow / Agent |
-| **Rủi ro & người kiểm tra** | |
+| **Actor** | Học viên K5-L3A bắt đầu CP1–CP2 trong buổi lab, cần xác định nhiệm vụ, file/mục cần điền và tiêu chí bắt buộc. Bằng chứng hiện tại là 2 học viên ngoài nhóm, chưa đại diện toàn lớp. |
+| **Quy trình** | Đọc README → tìm checkpoint và vị trí điền → đọc worksheet → đối chiếu Rubric/Rules → lập đầu việc; mở lại nguồn khi gặp điểm chưa rõ. |
+| **Bottleneck** | Dò chéo giữa các tài liệu để nối yêu cầu, vị trí điền và điều kiện chấm/phạt; 7 phút là ước lượng trong quy trình mô hình, chưa được bấm giờ riêng. |
+| **Impact** | Hai người được hỏi tự thuật mất khoảng 15–20 phút đọc/đối chiếu và phải mở nhiều file; có tín hiệu suýt bỏ sót điều kiện. Chưa có số liệu về tỷ lệ lỗi hay điểm bị mất. |
+| **Success Metric** (baseline → target, cách đo) | **Baseline tạm:** 15–20 phút/người/lượt theo 2 snapshot (tự thuật, chưa bấm giờ). **Target pilot:** trung vị thời gian tra cứu ≤8 phút/người; tổng công sức chuẩn bị, duyệt và sử dụng cho nhóm 4 người ≤40 người-phút; **0 lỗi nghiêm trọng** về nhiệm vụ bắt buộc, file/mục, điểm/điều kiện trừ điểm hoặc quy định dùng AI trong bảng. Thử với ≥3 học viên ngoài nhóm trên một bộ yêu cầu CP1–CP2 tương đương; ghi thời gian từng người và phần chuẩn bị chung, so checklist với nguồn và báo cáo từng mẫu cùng trung vị. Đây là ngưỡng thử, chưa phải kết quả đạt được. |
+| **Boundary** | Không dùng AI trong pilot. Bảng không thay thế tài liệu gốc, không tự diễn giải/loại bỏ ngoại lệ, không thay người học làm CP hoặc tự sửa báo cáo/nộp bài. Ghi phiên bản nguồn và người duyệt; mục thiếu, mâu thuẫn hoặc không rõ phải quay về nguồn và hỏi coach. |
+| **AI intervention point** | **Không có.** Chưa chứng minh AI cần thiết; yêu cầu cố định có thể được trình bày bằng bảng tham chiếu do người lập và kiểm tra. |
+| **Mức chọn** | **No AI — pilot bảng tham chiếu thủ công.** |
+| **Rủi ro & người kiểm tra** | Rủi ro chính là bảng lỗi thời hoặc thiếu điều kiện. Người phụ trách tổng hợp đối chiếu từng dòng với nguồn cùng phiên bản trước khi phát hành; người học mở nguồn khi nghi vấn. Không phát hành bản chưa duyệt. |
 
 **Thay đổi so với v0 và lý do:**
 
 | Trường | v0 | v1 | Vì sao đổi |
 |---|---|---|---|
-| | | | |
+| Phạm vi và quy trình | Mô tả tra cứu các checkpoint nói chung. | Giới hạn pilot ở CP1–CP2 và các tài liệu xác định nhiệm vụ, vị trí điền, tiêu chí. | Hai snapshot trực tiếp hỏi về CP1–CP2; không suy rộng sang mọi CP. |
+| Mức can thiệp | Để ngỏ phương án bảng, Rule và AI Workflow. | Chọn No AI cho pilot; không có điểm can thiệp AI. | Chưa có so sánh thực nghiệm cho thấy Rule/AI tốt hơn bảng cố định. |
+| Metric | Baseline/target đề xuất nhưng chưa phân biệt rõ số tự thuật với kết quả đo. | Ghi baseline tự thuật riêng; đo trung vị thời gian, tổng công sức và lỗi nghiêm trọng trong pilot ≥3 người. | Tránh coi 2 snapshot là phép đo độc lập hoặc kết luận đại diện. |
+| Boundary và kiểm soát | Nêu giới hạn AI và HITL nếu có AI. | Ghi rõ không dùng AI; bảng phải có nguồn/phiên bản/người duyệt, có fallback đọc nguồn. | Phù hợp với mức No AI và kiểm soát rủi ro bảng sai/lỗi thời. |
 
-**Tiêu chí đánh giá đầu ra của AI (3–5 tiêu chí):**
+**Tiêu chí đánh giá giải pháp không dùng AI (pilot bảng tham chiếu):**
 
 | # | Tiêu chí | Đạt khi | Không đạt khi |
 |---:|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
+| 1 | Độ chính xác và đầy đủ | Mọi yêu cầu bắt buộc trong phạm vi CP1–CP2 khớp nguồn; không thiếu/sai file, mục, tiêu chí hoặc điều kiện trừ điểm. | Có ít nhất một yêu cầu bắt buộc bị thiếu, sai hoặc gán nhầm nguồn. |
+| 2 | Khả năng truy về nguồn | Mỗi dòng yêu cầu có tên file và heading/đường dẫn đủ để mở đúng nội dung, đúng phiên bản. | Có dòng không tìm được nguồn, trỏ sai phiên bản hoặc không xác minh được. |
+| 3 | Thời gian tra cứu | Trung vị của ≥3 học viên ngoài nhóm không quá 8 phút/người/lượt CP1–CP2, tính cả thời gian mở nguồn phát sinh trong lượt. | Trung vị vượt 8 phút hoặc phép đo không ghi đủ thời gian quay về nguồn. |
+| 4 | Tổng công sức | Thời gian chuẩn bị và duyệt chung cộng thời gian sử dụng của 4 người không quá 40 người-phút/lượt. | Tổng vượt 40 người-phút hoặc bỏ thời gian chuẩn bị/kiểm tra khỏi phép tính. |
+| 5 | Kiểm soát phiên bản và lỗi nghiêm trọng | Có phiên bản/người duyệt; không có sai lệch nghiêm trọng về nhiệm vụ, file, điểm/điều kiện hoặc quy định dùng AI. | Dùng bản cũ/chưa duyệt hoặc có ít nhất một sai lệch nghiêm trọng. |
 
 ---
 
@@ -405,31 +410,39 @@ Vì sao:
 
 | Rủi ro | Câu hỏi | Mức độ rủi ro (Thấp = an toàn / TB / Cao = nguy hiểm) | Lý do / bằng chứng |
 |---|---|---|---|
-| **Value** | Người dùng có thật sự cần và sẽ dùng không? | | |
-| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | | |
-| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | | |
-| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | | |
+| **Value** | Người dùng có thật sự cần và sẽ dùng không? | **Trung bình** | Hai snapshot ghi nhận cùng hành vi dò chéo và khoảng thời gian tự thuật 15–20 phút; mẫu chỉ 2 người, chưa đo mức phổ biến hoặc kiểm tra nhu cầu với bảng tham chiếu. |
+| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | **Thấp** | Không có đầu ra AI trong pilot. Bảng một trang có đường dẫn nguồn là cách đơn giản, nhưng tính dễ dùng chưa được thử với ≥3 học viên. |
+| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | **Thấp** | Các nguồn Markdown đã có trong repo và bảng có thể lập thủ công, không cần tích hợp hay dữ liệu cá nhân. Công cập nhật khi nguồn đổi vẫn cần theo dõi. |
+| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | **Thấp** | Pilot dùng tài liệu công khai của lớp, không phát sinh dịch vụ AI hay chi phí kỹ thuật đáng kể; một thành viên được phân công phải cập nhật/duyệt mỗi khi nguồn đổi. |
 
 ### 8.2. Kết luận
 
-**Quyết định:** Go / Not Yet / No-Go
+**Quyết định: Go — chỉ cho pilot nhỏ có kiểm soát; chưa phải Go triển khai rộng.**
 
-**Lý do:**
+**Lý do:** Chọn giải pháp No AI giới hạn rủi ro và có thể quay về nguồn gốc. Hai snapshot cho thấy một vấn đề đủ cụ thể để thử, nhưng mẫu nhỏ và thời gian tự thuật nên chưa chứng minh bảng đạt target. Pilot nhằm đo giá trị và usability; không tuyên bố hiệu quả trước khi có kết quả. Quyết định cần được nhóm xác nhận trước khi thực hiện.
 
-**Nếu Go — pilot nhỏ nhất:**
+**Pilot nhỏ nhất:** lập một bảng tham chiếu CP1–CP2 từ đúng phiên bản các file, ghi nguồn và người duyệt; cho ít nhất 3 học viên ngoài nhóm làm cùng một bộ yêu cầu tương đương. Ghi thời gian từng người, thời gian chuẩn bị/duyệt chung, số yêu cầu thiếu/sai và số lần quay về nguồn; đối chiếu độc lập với tài liệu gốc. Nếu có thể, so sánh với cách đọc nguồn trực tiếp trên bộ yêu cầu tương đương và đổi thứ tự để hạn chế hiệu ứng quen bài. Không tính thời gian làm báo cáo.
 
-**Nếu Not Yet — cần kiểm chứng gì trước:**
+**Nếu chưa thể tiến hành pilot:** xác nhận phạm vi CP1–CP2 và người duyệt; chuẩn hóa cách bấm giờ; hoàn thiện bộ tiêu chí đúng/sai từ nguồn. Không khẳng định target hoặc lợi ích trước khi đo.
 
-**Nếu No-Go — nên làm gì thay AI:**
+**Nếu pilot không đạt:** bỏ bảng như nguồn duy nhất, quay về `CHECKPOINTS.md`, `RUBRIC.md`, `RULES.md` và worksheet; cân nhắc sửa cách tổ chức tài liệu hoặc thử Rule chỉ khi ghi nhận được công việc lặp lại đủ lớn để biện minh.
 
-**Ngưỡng dừng** (nếu sau … mà … thì quay về …):
+**Ngưỡng dừng:** sau một vòng pilot với ≥3 học viên, nếu trung vị thời gian vượt 8 phút/người, tổng công sức nhóm 4 người vượt 40 người-phút, hoặc xuất hiện dù chỉ một lỗi nghiêm trọng trong bảng, dừng chia sẻ bảng như bản đã xác nhận và quay về tài liệu gốc. Chỉ thử lại sau khi sửa có đối chiếu nguồn; nếu vẫn không đạt sau một lần sửa, không tiếp tục dùng bảng độc lập và đánh giá lại phạm vi/quy trình.
 
 ---
 
 ## 9. Hạn chế và hướng tiếp theo
 
--
+- Mẫu phỏng vấn chỉ có 2 học viên ngoài nhóm; thời gian là tự thuật với cách ghi chưa hoàn toàn thống nhất, không phải dữ liệu bấm giờ hay đại diện toàn lớp.
+- Thời lượng riêng của bước bottleneck 7 phút, target ≤8 phút và tổng công sức ≤40 người-phút đều cần đo; chưa có kết quả pilot, tỷ lệ lỗi hoặc điểm bị mất.
+- Bảng tham chiếu, Rule/script và Workflow AI trong quy trình tương lai là phương án thiết kế; chưa có script được triển khai và chưa chứng minh AI tăng giá trị.
+- Bước tiếp theo: nhóm xác nhận quyết định và người phụ trách; dựng bảng CP1–CP2 từ phiên bản nguồn cụ thể; chạy pilot tối thiểu 3 học viên, ghi từng mẫu và kết quả so với tiêu chí mục 7; quyết định duy trì, sửa, thử Rule hay quay về đọc nguồn. Không mở rộng sang CP khác trước khi đánh giá pilot.
 
 ## 10. Tài liệu tham khảo
 
--
+- Google NotebookLM: https://notebooklm.google/
+- GitHub Copilot — Asking GitHub Copilot questions: https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-github
+- Diátaxis Documentation Framework: https://diataxis.fr/
+- Unified / Remark: https://github.com/remarkjs/remark
+- Interview Snapshot #1: [report/assets/cp4-interview-snapshot-1.md](../assets/cp4-interview-snapshot-1.md).
+- Interview Snapshot #2: [report/assets/cp4-interview-snapshot-2.md](../assets/cp4-interview-snapshot-2.md).
