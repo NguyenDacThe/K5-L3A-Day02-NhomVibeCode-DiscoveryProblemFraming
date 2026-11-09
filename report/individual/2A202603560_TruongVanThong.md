@@ -135,16 +135,16 @@ Bottleneck tạm xác định: nhận diện/xử lý, hơn 1 phút/cuộc; tầ
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Tôi đưa ra 3 Problem Card về đọc tài liệu tiếng Anh, xem thời khóa biểu và xử lý cuộc gọi rác. | Cả 3 được đưa vào danh sách 12 candidate để nhóm so sánh; nhóm chọn candidate #7 của thành viên khác để đào sâu. |
+| Phản biện bài của bạn khác | Tôi đặt câu hỏi: “Tại sao bắt buộc phải dùng AI/LLM cho bài toán này? Nếu chỉ dùng các quy tắc logic bình thường (rule-based) hoặc các hàm Excel có giải quyết được không?” | Câu hỏi nhấn mạnh cần so sánh với phương án đơn giản hơn trước khi chọn AI. Báo cáo nhóm không ghi câu hỏi nhắm tới candidate cụ thể hoặc câu trả lời trực tiếp. |
+| Nhận phản biện | Báo cáo nhóm có ghi các câu hỏi chuẩn bị cho pitch nhưng không xác nhận câu nào đã được hỏi trực tiếp với tôi. | Trong CP2, tôi đã ghi nhận các điểm cần làm rõ cho ba card: phạm vi baseline 5–8 giờ, bước nghẽn của việc xem lịch, và tần suất cuộc gọi/rủi ro chặn nhầm. Không tự gán các câu hỏi chuẩn bị trong báo cáo nhóm thành phản biện tôi thực sự đã nhận. |
+| Gom cluster / cây OST | Tôi đóng góp ba candidate để nhóm tổng hợp. `TEAM.md` không phân công tôi phụ trách chính phần cluster hoặc cây OST. | Nhóm đã chọn candidate #7 sau khi phân biệt opportunity với solution; không có bằng chứng để ghi phần xây cluster/OST là đóng góp riêng của tôi. |
+| Chọn candidate problem | Tôi cung cấp ba candidate cá nhân để nhóm chấm và so sánh. | Nhóm chọn candidate #7 — tra cứu và đối chiếu yêu cầu đầu buổi lab — thay vì ba candidate của tôi. |
+| Kiểm chứng / research | Theo phân công, tôi hỗ trợ Vũ Đức Anh research các giải pháp/pattern có sẵn: NotebookLM, GitHub Copilot Repository Context, Diátaxis và Unified/Remark Markdown AST. | Phần research hỗ trợ nhóm cân nhắc bảng tham chiếu/cheatsheet và công cụ hiện có, thay vì mặc định tự xây một công cụ AI. |
+| Quy trình nhóm | Tôi dùng kết quả CP4 và quy trình CP5 làm đầu vào khi phụ trách CP6; CP5 do Đinh Thị Hường phụ trách chính. | Quy trình mô tả việc đọc README, tìm checkpoint, đọc worksheet, dò Rubric/Rules rồi lập đầu việc. Báo cáo phân biệt số tự thuật 15–20 phút với thời gian chia nhỏ theo bước chỉ là ước lượng. |
+| Problem Statement | Tôi phụ trách Problem Statement v1 và tiêu chí đánh giá theo phân công trong `TEAM.md`. | V1 giới hạn actor ở học viên bắt đầu CP1–CP2, ghi baseline tạm từ 2 snapshot, target pilot chưa đo, boundary không dùng AI và cách kiểm tra với ít nhất 3 học viên ngoài nhóm. |
+| Mức can thiệp AI | Tôi so sánh No AI / Rule / Workflow / Agent và phụ trách phần mức can thiệp trong báo cáo nhóm. | Đề xuất pilot No AI bằng bảng tham chiếu theo CP, có nguồn, phiên bản và người duyệt. Chưa chọn Rule/Workflow/Agent vì chưa có bằng chứng phương án đơn giản hơn không đủ. |
+| Quyết định | Tôi phụ trách tổng hợp bốn rủi ro, quyết định và ngưỡng dừng; Nguyễn Đắc Thể hỗ trợ rà soát theo `TEAM.md`. | Đề xuất Go chỉ cho pilot nhỏ, chưa triển khai rộng hay tuyên bố đã đạt mục tiêu; cần đo thời gian và lỗi nghiêm trọng, quay về nguồn gốc khi có điểm thiếu hoặc mâu thuẫn. |
 
 ---
 
@@ -152,12 +152,10 @@ Bottleneck tạm xác định: nhận diện/xử lý, hơn 1 phút/cuộc; tầ
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP1 Scan | Tôi dùng AI để đưa thêm 2 gợi ý với vai trò nhà tuyển dụng |Gọi ý giúp tôi hai mục 9 và 10 |ý quá rộng|tôi sửa lại ý cụ thể không|
+| CP2 Problem Card | Có dùng AI để phản biện ba Problem Card; các ý phản biện được ghi trong bảng ngay phía trên mục này. | Gợi ra các câu hỏi cần kiểm tra: phạm vi baseline 5–8 giờ, bottleneck của việc xem thời khóa biểu, và tần suất/rủi ro chặn nhầm cuộc gọi. | Gợi ý chỉ nêu lỗ hổng cần kiểm chứng, không phải bằng chứng thực tế hay số đo mới. | Ghi rõ phạm vi thời gian và điểm nghẽn còn chưa xác định; bổ sung điều kiện không tăng lỗi nội dung, đo tần suất cuộc gọi và theo dõi cuộc gọi hợp lệ bị bỏ lỡ. |
+| CP4 Research | Tạo ra những học viên mẫu | ý kiến của từng học viên | Không có nhật ký prompt/đầu ra để xác định lỗi cụ thể. | Tách research khỏi bằng chứng phỏng vấn và không coi giải pháp được tìm thấy là bằng chứng đã kiểm chứng hiệu quả. |
+| CP5 Quy trình | Chuyển mô tả văn bản sang code Mermaid. | Vẽ sơ đồ nhanh. | Gộp chung "viết narrative" và "review" thành 1 bước duy nhất. | Tự tách lại thành 2 bước riêng vì xác định bottleneck thực sự nằm ở bước narrative. |
 
 ---
 
@@ -166,21 +164,27 @@ Bottleneck tạm xác định: nhận diện/xử lý, hơn 1 phút/cuộc; tầ
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
-
+Học được tư duy "đóng khung" (scoping) vấn đề. Bài toán của tôi (dịch tài liệu) quá rộng và khó đo lường. Trong khi đó, bài toán của bạn Đức Anh (tra cứu yêu cầu lab) rất hẹp, nhắm đúng nỗi đau thực tế (alt-tab nhiều), có sẵn dữ liệu và dễ kiểm chứng ngay tại lớp.
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
-
+Có. Nhóm từng định dùng luôn AI Agent hoặc Copilot để tự đọc repo và điền checklist. Nhưng khi vẽ cây OST và tra cứu framework Diátaxis, nhóm nhận ra rễ vấn đề chỉ là tài liệu bị phân mảnh, nên đã "quay xe" chọn làm Bảng thủ công (No AI) thay vì lạm dụng công nghệ.
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
-
+Có. Ở bài toán lọc cuộc gọi rác, tôi từng muốn AI tự động chặn. Nhưng khi bị phản biện về rủi ro chặn nhầm cuộc gọi quan trọng (Cost of Error), tôi nhận ra không thể tự động hóa 100%, nên đã đổi ý, hạ scope và ưu tiên dùng Rule-based của nhà mạng trước.
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
-
+Rất bất ngờ. Hai cuộc phỏng vấn Mom Test chỉ ra rằng học viên chỉ mất 5 phút đọc README. 15-20 phút lãng phí còn lại là do họ liên tục alt-tab dò chéo các file vì tâm lý "sợ bỏ sót điều kiện phạt điểm", chứ không phải do tốc độ đọc hiểu chậm.
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
-
+Khó nhất là giữ sự trung thực với số liệu và vạch ranh giới (Boundary). Rất dễ bị cám dỗ biến "ước lượng 15-20 phút của 2 người" thành sự thật cho cả lớp. Ngoài ra, việc quy định công cụ không được diễn giải sai hay làm bài thay học viên cũng đòi hỏi câu chữ rất chặt chẽ.
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
-
+Tôi sẽ phản biện mạnh về phương pháp đo lường thời gian ở CP4. Thay vì tin vào số phút học viên "tự thuật", tôi sẽ yêu cầu trực tiếp đứng bấm giờ (shadowing) thao tác của họ để có Baseline chuẩn xác nhất, từ đó chốt Target ≤ 8 phút thuyết phục hơn.
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
-
+Vấn đề cốt lõi là học viên K5-L3A mất 15-20 phút dò chéo yêu cầu thực hành do tài liệu phân mảnh. Nút thắt lớn nhất nằm ở bước tra cứu điều kiện trừ điểm. Nhóm đặt metric giảm thời gian xuống ≤8 phút và 0 lỗi bỏ sót. Boundary là công cụ chỉ tổng hợp nguyên văn, không tự suy diễn điểm số hay thay thế việc làm bài. Đánh giá độ mơ hồ và phức tạp thấp, mức can thiệp AI phù hợp nhất là No AI. Quyết định cuối cùng là Go pilot một bảng tham chiếu thủ công để đo lường giá trị thực tế.
 ---
 
 ## 7. Tài liệu tham khảo
 
--
+- [Anthropic — Building effective agents](https://www.anthropic.com/research/building-effective-agents) — cơ sở phân biệt Workflow và Agent, chọn mức đơn giản nhất đủ dùng.
+- [Google PAIR — User Needs](https://pair.withgoogle.com/chapter/user-needs/) — khung câu hỏi về nhu cầu người dùng và cách xác định thành công.
+- [HBR — A Simple Tool to Start Making Decisions with the Help of AI](https://hbr.org/2018/04/a-simple-tool-to-start-making-decisions-with-the-help-of-ai) — AI Canvas.
+- [SVPG — The Four Big Risks](https://www.svpg.com/four-big-risks/) — Value, Usability, Feasibility và Viability.
+- [Diátaxis Documentation Framework](https://diataxis.fr/) và [Unified / Remark](https://github.com/remarkjs/remark) — research về cách tổ chức và xử lý tài liệu.
+- Bằng chứng kiểm chứng: [Interview Snapshot #1](../assets/cp4-interview-snapshot-1.md), [Interview Snapshot #2](../assets/cp4-interview-snapshot-2.md).
+- Báo cáo nhóm: [group_report.md](../team/group_report.md), các mục 6–10; phân công và vai trò: [TEAM.md](../../TEAM.md).
