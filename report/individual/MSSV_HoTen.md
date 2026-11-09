@@ -6,11 +6,11 @@
 
 ## 1. Thông tin học viên
 
-- Họ tên:
-- MSSV:
+- Họ tên: Nguyễn Đắc Thể
+- MSSV:2A202603529
 - Email trường (không bắt buộc, repo có thể để public):
-- Tên nhóm:
-- Link repo nhóm:
+- Tên nhóm: VibeCode
+- Link repo nhóm:https://github.com/NguyenDacThe/K5-L3A-Day02-NhomVibeCode-DiscoveryProblemFraming.git
 
 ---
 
