@@ -7,8 +7,8 @@
 
 - Tên nhóm: VibeCode
 - Thành viên: xem `TEAM.md`
-- Candidate problem được chọn (1 câu):
-- Quyết định cuối: Go / Not Yet / No-Go
+- Candidate problem được chọn (1 câu): Học viên K5-L3A mất thời gian tra cứu và đối chiếu yêu cầu đầu buổi lab vì nhiệm vụ, vị trí điền và tiêu chí chấm nằm ở nhiều tài liệu.
+- Quyết định cuối (đề xuất CP6, chờ nhóm xác nhận): **Go — chỉ pilot quy trình No AI bằng bảng tham chiếu; chưa triển khai rộng hoặc kết luận đã đạt mục tiêu.**
 
 ---
 

@@ -75,14 +75,52 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 - Đề xuất Candidate #7 (bài toán được nhóm chọn ở CP3) và hỗ trợ hội tụ nhóm ở CP3.
 - Phụ trách chính CP4 — Kiểm chứng (Assumption Map, phỏng vấn theo _The Mom Test_, tổng hợp tín hiệu xác nhận/phản bác) và Research giải pháp đã có (Mục 3 trong `group_report.md`).
+- Hỗ trợ Đinh Thị Hường đối chiếu dữ liệu kiểm chứng CP4 sang quy trình trước/sau ở CP5.
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
--
+- Đề xuất Candidate #7 vào bảng tổng hợp 12 candidate của nhóm và tham gia phản biện, gom cụm, chấm điểm shortlist ở CP3.
+- Xây dựng bảng Assumption Map gồm 6 giả định phân loại theo Value, Usability, Feasibility, Viability và xác định 4 giả định ưu tiên kiểm chứng.
+- Thiết kế bộ 4 câu hỏi phỏng vấn tuân thủ _The Mom Test_, trực tiếp phỏng vấn 2 học viên nhóm khác trong lớp K5-L3A, lập bảng Interview Snapshot #1 và #2 và phân tích tín hiệu xác nhận / phản bác để điều chỉnh phạm vi bottleneck của nhóm.
+- Thực hiện Research 4 công cụ/pattern thực tế (Google NotebookLM, GitHub Copilot Repository Context, Diátaxis Documentation Framework, Unified/Remark Markdown AST) kèm kiểm tra link sống và rút ra kết luận chuyển hướng từ "tự xây công cụ AI" sang quy trình bán thủ công kết hợp bảng Cheatsheet/Rule và công cụ có sẵn.
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
--
+- [Mục 3.1 — Assumption Map](report/team/group_report.md#31-assumption-map).
+- [Mục 3.2 — Kiểm chứng và điều chỉnh problem](report/team/group_report.md#32-kiểm-chứng).
+- [Mục 3.3 — Research giải pháp đã có](report/team/group_report.md#33-research-giải-pháp-đã-có).
+- File ghi chú phỏng vấn chi tiết: [report/assets/cp4-interview-snapshot-1.md](report/assets/cp4-interview-snapshot-1.md), [report/assets/cp4-interview-snapshot-2.md](report/assets/cp4-interview-snapshot-2.md).
+- Báo cáo cá nhân: [report/individual/2A202603573_VuDucAnh.md](report/individual/2A202603573_VuDucAnh.md).
+- Commit `2de3ccb` (`CP4`), `143e664` (`CP4 update`), `ec976c9` (`Final`) trên nhánh `DucAnh`.
+
+**Điều mình học được từ phần nhóm:**
+
+- Khi đưa problem cá nhân ra nhóm phản biện và đi phỏng vấn người thật ở nhóm khác, mình nhận ra giả định ban đầu ("ai cũng ngồi đọc một mạch 25 phút đầu giờ") chưa sát thực tế bằng việc học viên chỉ đọc `README.md` 5–6 phút rồi mất 15–20 phút mở qua mở lại giữa `RUBRIC.md` và `RULES.md` vì sợ sót yêu cầu nhỏ. Nhờ kiểm chứng và research, nhóm tránh được bẫy tự xây chatbot/Agent thừa thãi.
+- Qua phần CP5–CP6 của nhóm, mình học được cách tách bạch giữa số liệu tự thuật từ phỏng vấn (15–20 phút), thời gian ước lượng từng bước và mục tiêu thử nghiệm (target ≤ 8 phút/người), cũng như phải tính cả công sức chuẩn bị và duyệt bảng tham chiếu (`No AI`) kèm ngưỡng dừng rõ ràng trước khi quyết định `Go` cho pilot nhỏ.
+
+### DinhThiHuong-2A202603569
+
+**Phần việc phụ trách:**
+
+- Phụ trách tổng hợp CP5 theo worksheet và kết quả kiểm chứng CP4.
+
+**Đóng góp cụ thể:**
+
+- Đối chiếu CP5 với [snapshot #1](report/assets/cp4-interview-snapshot-1.md) và [snapshot #2 của Đức Anh](report/assets/cp4-interview-snapshot-2.md); phân biệt số tự thuật, thời gian phân bổ ước lượng và mục tiêu pilot.
+- Tổng hợp nội dung CP5 trên bản báo cáo nhóm từ nhánh `DucAnh` (commit `143e664`), đồng bộ asset và các file liên quan.
+- Phần việc CP5 gồm quy trình trước/sau, actor/input/output, thời gian ước lượng, handoff, bước người kiểm tra, boundary, phương án quay về và bảng before/after.
+- Tổng hợp Problem Statement v0 và các điểm cần rà về baseline, chi phí duyệt, mẫu kiểm chứng và nhu cầu AI để nhóm chốt.
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+- [Mục 4.1 — Quy trình hiện tại](report/team/group_report.md#41-quy-trình-hiện-tại): actor, input/output, thời gian từng bước, handoff và bottleneck đối chiếu yêu cầu.
+- [Mục 4.2 — Quy trình tương lai](report/team/group_report.md#42-quy-trình-tương-lai): phân biệt Rule/AI/con người, bước người duyệt, boundary và phương án quay về khi công cụ lỗi.
+- [Mục 4.3 — Before / after](report/team/group_report.md#43-before--after): so sánh số bước, thời gian, công sức nhóm và rủi ro; đề xuất cách đo pilot.
+- [Mục 5 — Problem Statement v0 và phản biện](report/team/group_report.md#5-problem-statement-v0-cp5): 6 trường, baseline/target/cách đo và các điểm cần kiểm chứng.
+- [Mục 3.2 — Kiểm chứng](report/team/group_report.md#32-kiểm-chứng), [snapshot #1](report/assets/cp4-interview-snapshot-1.md) và [snapshot #2](report/assets/cp4-interview-snapshot-2.md): đầu vào CP4 để đối chiếu khi tổng hợp quy trình; người trực tiếp phỏng vấn là Vũ Đức Anh.
+- [Báo cáo cá nhân — Phần tham gia](report/individual/2A202603569_DinhThiHuong.md#4-tôi-đã-tham-gia-phần-nào-cp3--cp7) và [Nhật ký dùng AI](report/individual/2A202603569_DinhThiHuong.md#5-dùng-ai).
+- [Commit `73bfbdc` — cập nhật báo cáo nhóm CP5](https://github.com/NguyenDacThe/K5-L3A-Day02-NhomVibeCode-DiscoveryProblemFraming/commit/73bfbdc9f10e32f7a3c7c09c2ebb011ceee50708).
+- [Commit `a79d17b` — cập nhật đóng góp nhóm và CP5 theo bằng chứng phỏng vấn mới](https://github.com/NguyenDacThe/K5-L3A-Day02-NhomVibeCode-DiscoveryProblemFraming/commit/a79d17bd388f19f6f61a8cbc2351d49710aed0ed).
 
 **Điều mình học được từ phần nhóm:**
 
