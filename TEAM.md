@@ -26,7 +26,7 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 | Checkpoint                                 | Người chính    | Người hỗ trợ     | Sản phẩm                                                                                          |
 | ------------------------------------------ | -------------- | ---------------- | ------------------------------------------------------------------------------------------------- |
 | CP3 — Hội tụ nhóm                          | Nguyễn Đắc Thể | Vũ Đức Anh       | Tổng hợp 12 candidate, cluster, shortlist 3 candidate, cây OST, bảng chấm điểm và lý do chọn/loại |
-| CP4 — Kiểm chứng                           | Vũ Đức Anh     | Đinh Thị Hường   | Assumption map, phỏng vấn Mom Test, Interview Snapshot (`cp4-interview-snapshot-1.md`)            |
+| CP4 — Kiểm chứng                           | Vũ Đức Anh     | Đinh Thị Hường   | Assumption map, phỏng vấn Mom Test (2 học viên nhóm khác), Interview Snapshots (`cp4-interview-snapshot-1.md`, `cp4-interview-snapshot-2.md`) |
 | CP4 — Research                             | Vũ Đức Anh     | Trương Văn Thông | Bảng research 4 giải pháp/pattern có link kiểm chứng và kết luận sửa problem                      |
 | CP5 — Quy trình trước/sau                  |                |                  | Quy trình + bảng before/after                                                                     |
 | CP5 — Problem Statement v0                 |                |                  | Problem Statement v0                                                                              |
@@ -79,7 +79,7 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 - [Mục 3.1 — Assumption Map](report/team/group_report.md#31-assumption-map).
 - [Mục 3.2 — Kiểm chứng và điều chỉnh problem](report/team/group_report.md#32-kiểm-chứng).
 - [Mục 3.3 — Research giải pháp đã có](report/team/group_report.md#33-research-giải-pháp-đã-có).
-- File ghi chú phỏng vấn chi tiết: [report/assets/cp4-interview-snapshot-1.md](report/assets/cp4-interview-snapshot-1.md).
+- File ghi chú phỏng vấn chi tiết: [report/assets/cp4-interview-snapshot-1.md](report/assets/cp4-interview-snapshot-1.md), [report/assets/cp4-interview-snapshot-2.md](report/assets/cp4-interview-snapshot-2.md).
 
 **Điều mình học được từ phần nhóm:**
 
