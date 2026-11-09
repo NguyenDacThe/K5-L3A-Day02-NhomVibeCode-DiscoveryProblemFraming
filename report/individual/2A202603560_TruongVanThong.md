@@ -162,21 +162,45 @@ Bottleneck tạm xác định: nhận diện/xử lý, hơn 1 phút/cuộc; tầ
 ## 6. Reflection (CP7)
 
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
-
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
 Học được tư duy "đóng khung" (scoping) vấn đề. Bài toán của tôi (dịch tài liệu) quá rộng và khó đo lường. Trong khi đó, bài toán của bạn Đức Anh (tra cứu yêu cầu lab) rất hẹp, nhắm đúng nỗi đau thực tế (alt-tab nhiều), có sẵn dữ liệu và dễ kiểm chứng ngay tại lớp.
-**6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+
+**6.2. Nhóm có lúc nào bị "solution-first" không? Nhận ra và xử lý thế nào?**
 Có. Nhóm từng định dùng luôn AI Agent hoặc Copilot để tự đọc repo và điền checklist. Nhưng khi vẽ cây OST và tra cứu framework Diátaxis, nhóm nhận ra rễ vấn đề chỉ là tài liệu bị phân mảnh, nên đã "quay xe" chọn làm Bảng thủ công (No AI) thay vì lạm dụng công nghệ.
+
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
 Có. Ở bài toán lọc cuộc gọi rác, tôi từng muốn AI tự động chặn. Nhưng khi bị phản biện về rủi ro chặn nhầm cuộc gọi quan trọng (Cost of Error), tôi nhận ra không thể tự động hóa 100%, nên đã đổi ý, hạ scope và ưu tiên dùng Rule-based của nhà mạng trước.
-**6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+
+**6.4. Kết quả kiểm chứng có làm tôi bất ngờ không? Điều gì?**
 Rất bất ngờ. Hai cuộc phỏng vấn Mom Test chỉ ra rằng học viên chỉ mất 5 phút đọc README. 15-20 phút lãng phí còn lại là do họ liên tục alt-tab dò chéo các file vì tâm lý "sợ bỏ sót điều kiện phạt điểm", chứ không phải do tốc độ đọc hiểu chậm.
+
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 Khó nhất là giữ sự trung thực với số liệu và vạch ranh giới (Boundary). Rất dễ bị cám dỗ biến "ước lượng 15-20 phút của 2 người" thành sự thật cho cả lớp. Ngoài ra, việc quy định công cụ không được diễn giải sai hay làm bài thay học viên cũng đòi hỏi câu chữ rất chặt chẽ.
-**6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+
+**6.6. Nếu làm lại, tôi sẽ đổi gì? Phản biện nhóm mạnh hơn ở điểm nào?**
 Tôi sẽ phản biện mạnh về phương pháp đo lường thời gian ở CP4. Thay vì tin vào số phút học viên "tự thuật", tôi sẽ yêu cầu trực tiếp đứng bấm giờ (shadowing) thao tác của họ để có Baseline chuẩn xác nhất, từ đó chốt Target ≤ 8 phút thuyết phục hơn.
-**6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
-Vấn đề cốt lõi là học viên K5-L3A mất 15-20 phút dò chéo yêu cầu thực hành do tài liệu phân mảnh. Nút thắt lớn nhất nằm ở bước tra cứu điều kiện trừ điểm. Nhóm đặt metric giảm thời gian xuống ≤8 phút và 0 lỗi bỏ sót. Boundary là công cụ chỉ tổng hợp nguyên văn, không tự suy diễn điểm số hay thay thế việc làm bài. Đánh giá độ mơ hồ và phức tạp thấp, mức can thiệp AI phù hợp nhất là No AI. Quyết định cuối cùng là Go pilot một bảng tham chiếu thủ công để đo lường giá trị thực tế.
+
+****6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+Học được tư duy "đóng khung" (scoping) vấn đề. Bài toán của tôi (dịch tài liệu) quá rộng và khó đo lường. Trong khi đó, bài toán của bạn Đức Anh (tra cứu yêu cầu lab) rất hẹp, nhắm đúng nỗi đau thực tế (alt-tab nhiều), có sẵn dữ liệu và dễ kiểm chứng ngay tại lớp.
+
+**6.2. Nhóm có lúc nào bị "solution-first" không? Nhận ra và xử lý thế nào?**
+Có. Nhóm từng định dùng luôn AI Agent hoặc Copilot để tự đọc repo và điền checklist. Nhưng khi vẽ cây OST và tra cứu framework Diátaxis, nhóm nhận ra rễ vấn đề chỉ là tài liệu bị phân mảnh, nên đã "quay xe" chọn làm Bảng thủ công (No AI) thay vì lạm dụng công nghệ.
+
+**6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+Có. Ở bài toán lọc cuộc gọi rác, tôi từng muốn AI tự động chặn. Nhưng khi bị phản biện về rủi ro chặn nhầm cuộc gọi quan trọng (Cost of Error), tôi nhận ra không thể tự động hóa 100%, nên đã đổi ý, hạ scope và ưu tiên dùng Rule-based của nhà mạng trước.
+
+**6.4. Kết quả kiểm chứng có làm tôi bất ngờ không? Điều gì?**
+Rất bất ngờ. Hai cuộc phỏng vấn Mom Test chỉ ra rằng học viên chỉ mất 5 phút đọc README. 15-20 phút lãng phí còn lại là do họ liên tục alt-tab dò chéo các file vì tâm lý "sợ bỏ sót điều kiện phạt điểm", chứ không phải do tốc độ đọc hiểu chậm.
+
+**6.5. Điều khó nhất khi viết Problem Statement là gì?**
+Khó nhất là giữ sự trung thực với số liệu và vạch ranh giới (Boundary). Rất dễ bị cám dỗ biến "ước lượng 15-20 phút của 2 người" thành sự thật cho cả lớp. Ngoài ra, việc quy định công cụ không được diễn giải sai hay làm bài thay học viên cũng đòi hỏi câu chữ rất chặt chẽ.
+
+**6.6. Nếu làm lại, tôi sẽ đổi gì? Phản biện nhóm mạnh hơn ở điểm nào?**
+Tôi sẽ phản biện mạnh về phương pháp đo lường thời gian ở CP4. Thay vì tin vào số phút học viên "tự thuật", tôi sẽ yêu cầu trực tiếp đứng bấm giờ (shadowing) thao tác của họ để có Baseline chuẩn xác nhất, từ đó chốt Target ≤ 8 phút thuyết phục hơn.
+
+**6.7. Hiểu bài:Hiểu bài: giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi problem → quy trình → metric → boundary → mức can thiệp AI → quyết định của bài nhóm mình.**
+Vấn đề cốt lõi là học viên K5-L3A mất 15-20 phút dò chéo yêu cầu thực hành do tài liệu phân mảnh. Nút thắt lớn nhất nằm ở bước tra cứu điều kiện trừ điểm. Nhóm đặt metric giảm thời gian xuống ≤8 phút và 0 lỗi bỏ sót. Boundary là công cụ chỉ tổng hợp nguyên văn, không tự suy diễn điểm số hay thay thế việc làm bài. Đánh giá độ mơ hồ và phức tạp thấp, mức can thiệp AI phù hợp nhất là No AI. Quyết định cuối cùng là Go pilot một bảng tham chiếu thủ công để đo lường giá trị thực tế.**
+
 ---
 
 ## 7. Tài liệu tham khảo
