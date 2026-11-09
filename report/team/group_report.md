@@ -138,47 +138,65 @@ Job Story: *Khi bắt đầu một buổi lab, học viên K5-L3A muốn xác đ
 
 | # | Giả định | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
 |---:|---|---|---:|---:|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
+| 1 | Học viên ở các nhóm khác trong lớp K5-L3A cũng mất từ 15–25 phút đầu buổi để mở nhiều tài liệu và tra cứu yêu cầu trước khi bắt tay vào làm bài. | Value | 5 | 2 | ✅ |
+| 2 | Bước gây mất thời gian và dễ bỏ sót nhất là **bước dò chéo qua lại giữa `CHECKPOINTS.md`, `RUBRIC.md` và `01-worksheet.md`** (do thông tin của cùng một CP nằm tách biệt ở 3 nơi), chứ không chỉ do đọc chậm. | Value | 5 | 2 | ✅ |
+| 3 | Chỉ cần một bảng tổng hợp cố định không dùng AI (*One-page Cheatsheet* gom Nhiệm vụ + File cần điền + Tiêu chí Rubric + Lỗi trừ điểm cho từng CP) là chưa đủ giải quyết hoàn toàn, hoặc ngược lại: bảng cố định đã giải quyết được 70–80% nỗi đau. | Value / Usability | 5 | 1 | ✅ |
+| 4 | Học viên muốn một bản tổng hợp hỗ trợ đối chiếu kèm trích dẫn về file gốc (**augment**) hơn là giao hẳn cho công cụ tự tóm tắt mà không kiểm tra lại (**automate**), vì sợ sót điều kiện trừ điểm trong `RUBRIC.md`. | Usability | 4 | 2 | ✅ |
+| 5 | Toàn bộ tài liệu đầu vào của buổi lab (`README.md`, `RULES.md`, `CHECKPOINTS.md`, `RUBRIC.md`, `SUBMISSION.md`, `docs/01-worksheet.md`) đều ở định dạng Markdown có cấu trúc heading/bảng chuẩn, có thể gom tự động bằng Rule/script hoặc đọc trực tiếp trong IDE/repo. | Feasibility | 4 | 5 | — |
+| 6 | Quy định trong `RULES.md` cho phép dùng công cụ hỗ trợ tổng hợp và tra cứu yêu cầu tài liệu, miễn là không dùng AI làm thay phần bắt buộc tự thực hiện (Pitch CP3, Phỏng vấn CP4, Reflection CP7). | Viability | 4 | 5 | — |
 
-*Điền 4–6 giả định; xóa dòng thừa.*
-
-Giả định nhóm kiểm chứng trong buổi này:
+Giả định nhóm kiểm chứng trong buổi này: **Giả định #1, #2, #3 và #4** (nhóm giả định có mức độ Quan trọng cao 4–5 nhưng Đã có bằng chứng thấp 1–2), thông qua phỏng vấn nhanh theo *The Mom Test* với học viên các nhóm khác trong lớp K5-L3A.
 
 ### 3.2. Kiểm chứng
 
-Cách đã dùng: Phỏng vấn / Survey / Log, ticket, review
+Cách đã dùng: **Phỏng vấn nhanh theo *The Mom Test*** với học viên ở nhóm khác trong lớp K5-L3A (kết hợp quan sát thực tế thao tác mở tài liệu đầu buổi lab).
 
-Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file trong `report/assets/cp4-interview-snapshot-N.md`):
+**Bộ câu hỏi phỏng vấn đã sử dụng (tuân thủ 3 luật *The Mom Test* — hỏi về hành vi đã xảy ra trong buổi sáng, không hỏi ý kiến giả định hay đề cập giải pháp):**
+1. *"Lúc mới mở repo bài lab sáng nay, bạn đã đọc những file nào trước để biết CP1, CP2 phải làm gì và điền vào đâu?"*
+2. *"Từ lúc mở đề đến lúc nắm rõ yêu cầu để bắt đầu làm bài, bạn mất khoảng bao nhiêu phút? Bước nào làm bạn mất thời gian nhất?"*
+3. *"Hiện tại bạn đang làm cách nào để đối chiếu và nhớ các điều kiện chấm điểm/trừ điểm trong `RUBRIC.md` và `RULES.md` trong lúc làm bài?"*
+4. *"Lúc làm các phần đầu sáng nay, bạn có bị bỏ sót hay phải quay lại sửa chi tiết nào vì lúc đọc lần đầu chưa để ý không?"*
+
+**Interview Snapshot #1** *(file chi tiết: [report/assets/cp4-interview-snapshot-1.md](../assets/cp4-interview-snapshot-1.md))*:
 
 | Trường | Nội dung |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | |
-| Câu nói đáng nhớ nhất (nguyên văn) | |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
-| Hiện đang xử lý bằng cách nào (workaround)? | |
-| Mất bao lâu, bao lần? | |
-| Insight / opportunity rút ra | |
+| Người được hỏi (vai trò, không ghi tên thật) | Học viên lớp K5-L3A (thành viên một nhóm khác trong cùng buổi lab Day 02). |
+| Câu nói đáng nhớ nhất (nguyên văn) | *"Lúc đầu mình đọc file `README.md` mất tầm 5–6 phút để nắm khung, nhưng lúc bắt tay vào làm vẫn phải mở qua mở lại giữa `README.md`, `RUBRIC.md` với `RULES.md` suốt khoảng 15–20 phút vì nếu không duyệt và đọc kỹ lại thì rất dễ bị sót các yêu cầu nhỏ."* |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Ngay đầu buổi lab Day 02 sáng nay: học viên mở repo của nhóm, đọc `README.md` trước (khoảng 5–6 phút) để hiểu luồng chung, sau đó khi bắt đầu làm CP1–CP2 thì phải liên tục mở thêm `RUBRIC.md`, `RULES.md` và `CHECKPOINTS.md` để kiểm tra xem mỗi mục yêu cầu điều kiện gì và cấm gì. |
+| Hiện đang xử lý bằng cách nào (workaround)? | Không có bảng gom sẵn; xử lý thủ công bằng cách **mở sẵn nhiều tab/file cùng lúc và chuyển qua chuyển lại (alt-tab / mở qua mở lại nhiều lần)** giữa `README.md`, `RUBRIC.md`, `RULES.md` và file báo cáo đang gõ để tự dò lại từng mục. |
+| Mất bao lâu, bao lần? | Riêng bước đọc và phân tích `README.md` ban đầu mất **5–6 phút**; tổng thời gian đọc và dò chéo qua lại với `RUBRIC.md`, `RULES.md` để nắm đủ yêu cầu mất khoảng **15–20 phút** (lặp lại việc mở qua mở lại nhiều lần ở mỗi checkpoint). |
+| Insight / opportunity rút ra | Học viên không đọc hết một mạch 25 phút rồi mới làm, mà đọc `README.md` 5–6 phút rồi **vừa làm vừa phải mở qua mở lại nhiều lần** với `RUBRIC.md` và `RULES.md` (tổng 15–20 phút). Nỗi đau lớn nhất không chỉ là thời gian đọc ban đầu mà là **chi phí chuyển ngữ cảnh (context switching) liên tục và nỗi lo bỏ sót điều kiện trừ điểm nếu không đọc đi đọc lại**. |
 
 Tổng hợp:
 
 | Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
 |---|---:|---|---|
-| | | | |
+| Phỏng vấn trực tiếp (The Mom Test) & quan sát tại lớp K5-L3A | 1 buổi phỏng vấn sâu + đối chiếu thực tế 4 thành viên nhóm | Xác nhận giả định #1 và #2: Học viên thực sự mất **15–20 phút** cho việc đọc `README.md` và dò chéo qua lại với `RUBRIC.md`, `RULES.md`; workaround hiện tại hoàn toàn là mở qua mở lại thủ công và thực tế **đã xảy ra việc bỏ sót chi tiết nhỏ** nếu không rà lại nhiều lần. | **Tín hiệu phản bác một phần giả định ban đầu:** Học viên không ngồi đọc liền 25 phút từ đầu mới bắt đầu làm, mà chỉ dành **5–6 phút** đọc `README.md` trước rồi chuyển sang vừa làm vừa mở lại `RUBRIC.md` / `RULES.md`. Ngoài ra, `README.md` đã làm khá tốt vai trò định hướng 5 phút đầu; điểm nghẽn thật sự dồn vào lúc **đối chiếu điều kiện chấm/phạt điểm trong `RUBRIC.md` và `RULES.md` cho từng checkpoint**. |
 
 **Nhóm đã sửa problem thế nào sau kiểm chứng:**
+
+1. **Điều chỉnh lại mô tả quy trình và Baseline thời gian sát thực tế hành vi:** Thay vì giả định học viên ngồi đọc một mạch 25 phút đầu giờ rồi mới làm bài, nhóm cập nhật lại: học viên mất **5–6 phút đầu** đọc `README.md` và mất thêm **10–15 phút tiếp theo (tổng 15–25 phút, trung bình ~20 phút)** do phải **mở qua mở lại nhiều lần** giữa `README.md`, `CHECKPOINTS.md`, `RUBRIC.md` và `RULES.md` để không bị sót điều kiện.
+2. **Thu hẹp chính xác phạm vi Bottleneck:** Không cần làm lại phần giới thiệu chung (vì `README.md` chỉ mất 5–6 phút là nắm được), mà tập trung giải quyết đúng bước **"đối chiếu điều kiện chấm điểm (`RUBRIC.md`), quy định dùng công cụ (`RULES.md`) và vị trí điền (`CHECKPOINTS.md`) theo từng CP"** để học viên không phải mở qua mở lại nhiều file và không bị sót yêu cầu nhỏ.
+3. **Định hình giải pháp kết hợp từ Kiểm chứng + Research:** Vì học viên rất sợ bỏ sót điều kiện trừ điểm nhỏ (như cấm từ khóa ở CP1, bắt buộc có phản biện ở CP2, cấm dùng AI ở CP3/CP4 phỏng vấn), một bản tóm tắt chung chung của AI là **không an toàn**. Giải pháp đúng phải là một **Bảng đối chiếu 1 trang (One-page Cheatsheet) theo từng CP** kết hợp giữa **Rule/trích xuất nguyên văn điều kiện Rubric & Rules** và **Workflow tóm tắt ngắn hướng dẫn worksheet có trích dẫn dòng**, kèm bước con người duyệt lại.
 
 ### 3.3. Research giải pháp đã có
 
 | Công cụ / case / pattern | Link | Giải bước nào trong quy trình? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| **Google NotebookLM** (Source-grounded Briefing Doc & Study Guide) | https://notebooklm.google/ | **Bước 2, 3, 4, 5:** Tải bộ 6–7 file `.md` của buổi lab lên một notebook để tạo *Briefing Doc / Study Guide* và tra cứu chéo yêu cầu từng CP kèm trích dẫn nguồn (inline citations) trỏ thẳng về đoạn gốc. | Chỉ trả lời dựa trên tài liệu nguồn được tải lên (source-grounded), hạn chế bịa thông tin ngoài đề; có trích dẫn số thứ tự nguồn để bấm đối chiếu ngay với `RUBRIC.md` và `CHECKPOINTS.md`. | Phải tải thủ công từng file `.md` lên mỗi đầu buổi lab; bản tóm tắt mặc định chưa chia sẵn theo đúng bảng 4 cột (*CP — File cần điền — Tiêu chí Rubric — Điều kiện trừ điểm*) nếu không nhập prompt cấu trúc rõ ràng; vẫn có thể tóm tắt lướt qua các quy tắc phạt điểm nhỏ ở cuối file. | Không cần tự xây hệ thống RAG từ đầu; nếu dùng AI hỗ trợ tổng hợp quy định thì **bắt buộc phải có trích dẫn nguồn (citation)** trỏ về file gốc để học viên kiểm tra. |
+| **GitHub Copilot Chat — Repository Context** (Hỏi đáp trực tiếp trên ngữ cảnh repo) | https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-github | **Bước 3, 4, 5:** Đọc trực tiếp toàn bộ các file `.md` ngay trong repo bài lab đã fork (`README.md`, `CHECKPOINTS.md`, `RUBRIC.md`, `docs/01-worksheet.md`) để lập bảng đối chiếu yêu cầu và vị trí điền cho từng CP. | Tích hợp sẵn ngay trên GitHub và IDE, đọc trực tiếp cấu trúc thư mục và tên file thật (`report/individual/MSSV_HoTen.md`, `report/team/group_report.md`) mà không tốn bước copy/upload file. | Nếu từng thành viên hỏi tự do (ad-hoc chat) thì kết quả không đồng nhất; mô hình dễ gộp nhầm yêu cầu giữa các CP hoặc bỏ sót điều kiện định lượng (như tối thiểu 200 từ ở CP7, sai tên file trừ 5 điểm) nếu không có khung trích xuất cố định. | Thay vì để mỗi người chat tự do, cần một **Workflow/Prompt chuẩn hóa đầu ra** cố định theo từng CP kết hợp bước con người rà lại các con số phạt điểm. |
+| **Diátaxis Documentation Framework** (Chuẩn quốc tế tổ chức tài liệu kỹ thuật) | https://diataxis.fr/ | **Bước 2, 3, 4 (Góc nhìn No AI):** Giải thích nguyên nhân gốc rễ gây nghẽn khi tài liệu tách rời thành 4 dạng: *Tutorials/How-to* (`01-worksheet.md`), *Reference* (`CHECKPOINTS.md`, `RUBRIC.md`, `RULES.md`) và *Example* (`02-deliverable-example.md`). | Chỉ ra cách giải quyết **No AI**: thiết kế một bảng tham chiếu nhanh 1 trang (*One-page Cheatsheet / Quick Reference*) đặt ở đầu buổi để nối trực tiếp từng `CP` với `File cần điền` và `Tiêu chí Rubric` mà không cần AI. | Đề bài gốc của khóa học do ban tổ chức thiết kế sẵn nên nhóm học viên không sửa trực tiếp cấu trúc repo gốc trước giờ mở đề được; vẫn cần 1 thành viên hoặc 1 script gom lại ở đầu buổi. | Phần **nối cấu trúc (CP nào → điền mục nào → chấm điểm ở dòng nào)** thực chất là bài toán tổ chức thông tin cố định; một bảng Cheatsheet 1 trang đã giải quyết được phần lớn mà không sợ AI bịa số liệu. |
+| **Unified / Remark Markdown AST** (Rule/Script tách và gom bảng Markdown theo heading) | https://github.com/remarkjs/remark | **Bước 3, 4 (Góc nhìn Rule):** Dùng script/Rule đọc cú pháp Markdown (heading `## CP0..CP7` và các dòng bảng tương ứng trong `CHECKPOINTS.md`, `RUBRIC.md`, `RULES.md`) để ghép thành 1 file tổng hợp tự động theo mã `CP`. | Chính xác 100% về mặt chữ và con số (không bao giờ làm tròn sai điểm hay sót chữ trong Rubric), chạy dưới 1 giây cho mọi repo lab có cấu trúc tương tự. | Chỉ ghép được nguyên văn các đoạn/bảng có từ khóa `CP1..CP7`, chưa tự tóm tắt ngắn gọn phần giải thích dài trong `docs/01-worksheet.md` nếu cấu trúc heading giữa các buổi lab thay đổi. | **Rule/Script** giữ vai trò trích xuất nguyên văn bảng điểm và quy định từ `RUBRIC.md` / `CHECKPOINTS.md`; **AI (trong Workflow)** chỉ nên hỗ trợ tóm tắt phần hướng dẫn dài trong `01-worksheet.md`. |
+
+**Kết luận từ Research (làm thay đổi góc nhìn của nhóm):**
+
+```text
+1. Không cần (và không nên) tự xây dựng một AI Agent hay hệ thống chatbot riêng.
+2. Phần đối chiếu "CP nào → điền file/mục nào → tiêu chí Rubric & điểm trừ" cần độ chính xác tuyệt đối 100%, nên giải quyết tốt nhất bằng Bảng Cheatsheet cố định + Rule/trích xuất nguyên văn (không để AI tự viết lại điểm số).
+3. Các công cụ đọc repo có sẵn (NotebookLM, Copilot/IDE Assistant với prompt chuẩn) đã làm tốt việc tóm tắt hướng dẫn dài trong 01-worksheet.md, miễn là đi theo một Workflow bán thủ công:
+   [Gom bảng CP + Rubric nguyên văn (Rule/Template)] → [Tóm tắt lưu ý chính từ worksheet kèm trích dẫn dòng (AI)] → [1 thành viên rà lại trong 3 phút & ghim cho cả nhóm dùng chung (Con người)].
+```
 
 ---
 
