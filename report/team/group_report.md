@@ -204,56 +204,118 @@ Tổng hợp:
 
 ### 4.1. Quy trình hiện tại
 
-Sơ đồ (ASCII, Mermaid hoặc link ảnh trong `report/assets/`):
+**Phạm vi đo:** một lượt đọc–đối chiếu yêu cầu cho các CP đầu buổi (CP1–CP2 theo snapshot), từ khi mở repo đến khi xác định đúng nhiệm vụ, vị trí điền và điều kiện chấm; tính thời gian quay lại tra cứu trong lượt này, loại thời gian viết báo cáo. Không suy rộng mốc này thành tổng thời gian tra cứu tất cả CP0–CP7 trong ngày.
+
+**Nguồn bằng chứng:** [Interview Snapshot #1 do Vũ Đức Anh thực hiện](../assets/cp4-interview-snapshot-1.md), mục 1–3: một học viên ngoài nhóm trong buổi lab Day 02; đọc README khoảng **5–6 phút**, phải mở lại README/RUBRIC/RULES/CHECKPOINTS và đã bỏ sót một số chi tiết nhỏ. Bảng trả lời câu 2 ghi **15–20 phút là tổng thời gian** đọc đến khi nắm yêu cầu; câu trích dẫn ở mục 3 có thể hiểu là **15–20 phút riêng cho việc dò lại**. Cần hỏi lại người phỏng vấn để xác nhận phạm vi; không cộng hai khoảng thành số đo mới.
+
+**Cơ sở thời gian:** tạm dùng cách hiểu ở câu trả lời số 2, lấy **20 phút/người cho một lượt đọc–đối chiếu yêu cầu đầu buổi** làm mốc tính toán. Phân bổ từng bước dưới đây là **ước lượng để mô hình hóa**, chưa phải số đo bấm giờ. Các lần tra cứu ở CP sau cần ghi riêng nếu ngoài lượt này. Con số 25 phút ở CP2 và khoảng 15–25 phút trong phần diễn giải CP4 không được coi là baseline đã xác nhận.
 
 ```text
+HIỆN TẠI — ước lượng 20 phút/người/lượt
 
+[1. Đọc README, nắm luồng lab: 6 phút]
+ → [2. Tìm CP và file/mục cần điền: 2 phút]
+ → [3. Đọc hướng dẫn tương ứng trong worksheet: 3 phút]
+ → [4. Dò chéo RUBRIC + RULES với CP/file đang làm: 7 phút] ← BOTTLENECK
+ → [5. Ghi đầu việc, rà thiếu sót và thống nhất với nhóm: 2 phút]
+
+Khi chưa rõ yêu cầu hoặc phát hiện thiếu: quay lại bước 2–4.
+Thời gian bước 4 là thời gian cộng dồn của các lần đối chiếu trong phạm vi trên.
 ```
 
-| Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
+| Bước | Actor | Input | Output | Thời gian / tần suất | Handoff / ghi chú |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+| 1 | Học viên | Repo và `README.md` | Hiểu luồng CP0–CP7, phân biệt phần cá nhân/nhóm | 6 phút; 1 lần đầu buổi | Cùng học viên chuyển sang bước 2; CP4 tự thuật 5–6 phút |
+| 2 | Học viên | `CHECKPOINTS.md`, thư mục `report/`, `SUBMISSION.md` | Danh sách CP, file và mục cần điền | 2 phút cộng dồn/lượt; ước lượng | Chuyển danh sách sang bước 3; mở lại khi đổi CP |
+| 3 | Học viên | `docs/01-worksheet.md`, danh sách ở bước 2 | Nắm cách làm và đầu ra của CP đang thực hiện | 3 phút cộng dồn/lượt; ước lượng | Chuyển yêu cầu đã đọc sang bước 4 |
+| 4 | Học viên | Đầu ra bước 2–3, `RUBRIC.md`, `RULES.md` | Ghép từng đầu việc với tiêu chí chấm, điều kiện trừ điểm và giới hạn dùng AI | **7 phút cộng dồn/lượt; ước lượng** | **Bottleneck:** liên tục đổi file và đọc lại để tránh sót; chuyển kết quả sang bước 5 |
+| 5 | Học viên; thành viên phụ trách tổng hợp nhóm | Các yêu cầu đã đối chiếu và file báo cáo hiện tại | Danh sách việc cần làm/sửa, phân công được thống nhất | 2 phút cộng dồn/lượt; ước lượng | Chia sẻ cho các thành viên; còn nghi vấn thì quay về nguồn gốc, chưa coi là đã xác nhận |
 
-**Bottleneck chính:**
+**Bottleneck chính:** bước 4 — đối chiếu điều kiện chấm/phạt điểm, quy định dùng AI và vị trí điền theo từng CP. Bằng chứng CP4 hỗ trợ việc phải chuyển qua lại nhiều file; **chưa chứng minh riêng bước này mất đúng 7 phút**. Chưa có số đếm lỗi bỏ sót để khẳng định mức giảm lỗi.
 
 ### 4.2. Quy trình tương lai
 
-Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người**, **boundary** ở đâu, **phương án quay về** khi AI sai.
+**Liên hệ kết quả CP4:** snapshot cho thấy học viên đọc README để nắm khung rồi cần tra lại điều kiện trong lúc làm. Vì vậy, đầu ra tương lai là bảng tra cứu theo từng CP có nguồn, không thay thế bộ đề hoặc yêu cầu đọc hiểu.
+
+**Phương án thử nghiệm:** một bảng tham chiếu chung theo CP, gồm `Nhiệm vụ — File/mục cần điền — Tiêu chí chấm — Điều kiện trừ điểm/quy định AI — Nguồn`. Thử bảng làm thủ công (No AI) trước; có thể dùng Rule gom nội dung cố định và AI hỗ trợ rút gọn hướng dẫn dài. Việc AI có tạo thêm giá trị so với bảng cố định vẫn cần kiểm chứng, chưa chốt mức can thiệp ở CP5.
 
 ```text
+TƯƠNG LAI — mục tiêu, chưa đo thực tế
 
+CHUẨN BỊ CHUNG: 6 phút/nhóm/lượt yêu cầu, cho bộ tài liệu đã có cấu trúc phù hợp
+[1. Người phụ trách chọn đúng phiên bản bộ nguồn: 1 phút]       ← CON NGƯỜI
+ → [2. Gom nguyên văn yêu cầu/điểm/quy định, gắn nguồn: 1 phút] ← RULE/SCRIPT
+ → [3. Tạo nháp lưu ý ngắn từ worksheet, kèm nguồn: 1 phút]    ← AI HỖ TRỢ
+ → [4. Đối chiếu toàn bộ bảng với nguồn, sửa rồi ghim: 3 phút] ← CON NGƯỜI / HITL
+
+SỬ DỤNG: mục tiêu 8 phút/người/lượt
+[5. Đọc bảng đã duyệt và xác định nhiệm vụ: 3 phút]             ← CON NGƯỜI
+ → [6. Mở nguồn ở điểm chưa rõ/quan trọng: 3 phút cộng dồn]     ← CON NGƯỜI
+ → [7. Rà đầu việc và thống nhất phân công: 2 phút]             ← CON NGƯỜI
+
+Chưa được bước 4 duyệt → không chia sẻ bảng như bản đã xác nhận.
+Nguồn thay đổi → quay lại bước 1–4; không tiếp tục dùng bản cũ.
 ```
+
+| Bước | Actor / loại xử lý | Input → Output | Thời gian kỳ vọng / handoff |
+|---:|---|---|---|
+| 1 | Thành viên phụ trách tổng hợp — con người | `README.md`, `CHECKPOINTS.md`, `RUBRIC.md`, `RULES.md`, `SUBMISSION.md`, worksheet cùng phiên bản → bộ nguồn có mã commit hoặc thời điểm chốt | 1 phút/nhóm/lượt; giao bộ nguồn cho bước 2 |
+| 2 | Rule/script theo cấu trúc heading/bảng đã biết | Bộ nguồn → bảng yêu cầu nguyên văn kèm đường dẫn và heading nguồn; mục không ghép được đánh dấu cần kiểm tra | 1 phút/nhóm/lượt, gồm chạy và xem cảnh báo; chuyển sang bước 3. Đây là thiết kế dự kiến, chưa có script được triển khai/đo trong CP5 |
+| 3 | AI hỗ trợ theo prompt cố định | Bảng nguyên văn và phần worksheet liên quan → nháp lưu ý ngắn cho từng CP, mỗi lưu ý có nguồn | 1 phút/nhóm/lượt; giao nháp cho người duyệt, không tự công bố |
+| 4 | Thành viên phụ trách tổng hợp — con người | Bảng và nháp → bản đã đối chiếu đủ CP, file, con số, quy định AI và nguồn; ghi người duyệt/phiên bản | 3 phút/nhóm/lượt; chia sẻ cho cả nhóm khi đạt. Nếu chưa kiểm xong thì tăng thời gian thực tế, không bỏ kiểm tra để đạt mục tiêu |
+| 5 | Mỗi học viên — con người | Bảng đã duyệt → xác định CP, file và đầu ra cần làm | 3 phút/người/lượt; chuyển sang bước 6 |
+| 6 | Mỗi học viên — con người | Bảng, liên kết nguồn → giải quyết điểm chưa rõ; kiểm trực tiếp điều kiện chấm/phạt và giới hạn dùng AI liên quan | 3 phút cộng dồn/người/lượt; nếu mâu thuẫn, báo người duyệt và hỏi coach khi nguồn chưa rõ |
+| 7 | Học viên và nhóm — con người | Kết quả tra cứu → đầu việc và phân công đã rà | 2 phút/người/lượt; dùng để làm bài, không thay thời gian thực hiện bài |
+
+**Boundary và HITL:**
+
+- AI chỉ tạo nháp lưu ý từ worksheet; không tự viết lại hay suy đoán điểm số, điều kiện trừ điểm, tên file, deadline hoặc quy định dùng AI. Phần này phải giữ nguyên văn từ nguồn và được con người kiểm tra.
+- AI không tự sửa tài liệu gốc, không tự ghi đè báo cáo, commit/push hay nộp LMS; không làm thay phần pitch CP3, phỏng vấn CP4 hoặc reflection CP7.
+- Trước khi bảng đến tay nhóm, người phụ trách đối chiếu mọi dòng với nguồn, đặc biệt các con số và ngoại lệ. Thiếu nguồn, sai phiên bản hoặc mâu thuẫn thì chưa phát hành; chưa rõ quy định thì hỏi coach.
+- Trích dẫn giúp kiểm tra, không bảo đảm nội dung đúng. Không suy ra một điều kiện không tồn tại chỉ vì bảng không liệt kê.
+
+**Phương án quay về:**
+
+1. AI lỗi, chậm hoặc tóm tắt sai: bỏ phần nháp AI, dùng bảng nguyên văn đã được người duyệt kiểm tra và mở trực tiếp worksheet; người phụ trách bổ sung lưu ý thủ công nếu cần.
+2. Rule không nhận được heading/bảng hoặc bỏ sót nội dung: đánh dấu chưa đủ, người phụ trách đối chiếu và lập bảng thủ công từ các file gốc. Không mặc định trích xuất luôn chính xác.
+3. Không kịp duyệt hoặc nguồn thay đổi: ngừng dùng bản chưa xác nhận; quay về đọc `CHECKPOINTS.md`, `RUBRIC.md`, `RULES.md` và worksheet trực tiếp. Ghi toàn bộ thời gian sửa/quay về vào kết quả pilot.
 
 ### 4.3. Before / after
 
 | Chỉ số | Trước | Sau (kỳ vọng) | Ghi chú |
-|---|---:|---:|---|
-| Số bước | | | |
-| Tổng thời gian | | | |
-| Số bước thủ công | | | |
-| Bottleneck chính | | | |
-| Rủi ro mới phát sinh | | | |
+|---|---|---|---|
+| Số bước | 5 bước/người | 4 bước chuẩn bị chung + 3 bước/người | Tách phần dùng chung; không dùng số bước ít hơn làm bằng chứng hiệu quả |
+| Tổng thời gian/người | Mốc tham chiếu 20 phút; CP4 tự thuật khoảng 15–20 phút | 8 phút sử dụng/người; người chuẩn bị kiêm sử dụng: 14 phút | Thời gian sau là mục tiêu; gồm cả người kiểm tra |
+| Tổng công sức nhóm 4 người | 80 người-phút theo mốc 20 phút/người | 6 + 4 × 8 = **38 người-phút** | Kỳ vọng giảm 42 người-phút (~52,5%); chưa được đo, baseline không đại diện mọi học viên |
+| Số bước thủ công | 5 bước/người | 2 bước chuẩn bị chung + 3 bước/người | Trong 7 bước tương lai: 5 bước con người, 1 Rule, 1 AI; kiểm duyệt vẫn thủ công |
+| Bottleneck chính | Dò chéo nhiều file: 7 phút/người, ước lượng | Kiểm bảng chung: 3 phút/nhóm; tra nguồn bổ sung: 3 phút/người | Cần đo để biết nghẽn có chuyển sang người duyệt không |
+| Lỗi bỏ sót/sai yêu cầu | Có tín hiệu định tính ở CP4; chưa có số đếm | Không có sai lệch nghiêm trọng về điểm, file, deadline, quy định AI trong bảng đã duyệt | Đếm theo nguồn gốc; không tuyên bố giảm lỗi khi chưa đo baseline |
+| Rủi ro mới phát sinh | Mỗi người tự bỏ sót khi đọc | Bảng thiếu/sai có thể lan ra cả nhóm; lỗi ghép CP, trích dẫn sai hoặc dùng nguồn cũ | Duyệt trước khi ghim, ghi phiên bản và quay về nguồn khi có nghi vấn |
+
+**Cách thử và đo:** tuyển tối thiểu 3 học viên ngoài nhóm có cùng bối cảnh cho một vòng pilot CP1–CP2; ghi mức quen thuộc tài liệu. Mỗi phương án dùng cùng số yêu cầu và cùng tiêu chí chấm đúng/sai; chỉ dừng đồng hồ khi học viên xác định đủ nhiệm vụ, file/mục cần điền và điều kiện liên quan. Thời gian làm báo cáo không nằm trong phép đo. So sánh trên các tập yêu cầu tương đương, đổi thứ tự làm để hạn chế lợi thế do đã đọc trước: (A) đọc nguồn trực tiếp, (B) bảng thủ công không AI, (C) bảng Rule + nháp AI có người duyệt. Ghi thời gian chuẩn bị/duyệt chung riêng, thời gian tra cứu của từng người riêng, số lỗi so với nguồn và mọi lần phải quay về. Không cho cùng người làm lại cùng yêu cầu rồi coi toàn bộ phần nhanh hơn là tác dụng của giải pháp. Nếu B đủ đạt mục tiêu thì ưu tiên B; chưa có cơ sở mặc định phải dùng C.
 
 ---
 
 ## 5. Problem Statement v0 (CP5)
 
+> **Bản đề xuất từ nội dung CP3–CP4 để nhóm rà và tự chốt.** Chưa phải biên bản nhóm đã đồng thuận. Baseline tạm thời dựa trên một cuộc phỏng vấn tự thuật; target là giả thuyết cần thử.
+
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | |
+| **Actor** | Học viên K5-L3A đang làm lab Day 02 theo nhóm 3–4 người, cần xác định đúng nhiệm vụ cá nhân/nhóm, vị trí điền và điều kiện chấm cho từng checkpoint. Bằng chứng hiện có trực tiếp từ 1 học viên ngoài nhóm, chưa đủ khái quát toàn lớp. |
+| **Quy trình** | Đọc README để nắm luồng → tìm checkpoint và file/mục cần điền → đọc hướng dẫn worksheet → đối chiếu RUBRIC/RULES → rà đầu việc và thống nhất phân công; quay lại tra cứu trong lúc làm khi chưa rõ yêu cầu. |
+| **Bottleneck** | Khi chuyển sang thực hiện từng CP, học viên phải dò chéo giữa hướng dẫn, tiêu chí chấm, quy định dùng AI và vị trí điền ở nhiều file, gây đọc lại và dễ bỏ sót điều kiện nhỏ. Bước đối chiếu ước lượng 7 phút trong mô hình 20 phút, cần bấm giờ để xác nhận. |
+| **Impact** | Một học viên ngoài nhóm tự thuật mất khoảng 15–20 phút cho việc đọc và dò chéo, trong đó README mất 5–6 phút; có nỗi lo và tín hiệu bỏ sót chi tiết nếu không rà lại. Chi phí quy đổi cho 4 người ở mốc 20 phút là 80 người-phút/lượt, chỉ là ước tính; chưa có dữ liệu định lượng về số lỗi hay điểm bị mất. |
+| **Success Metric** (baseline → target, cách đo) | **Baseline tạm thời:** 15–20 phút/người/lượt đọc–đối chiếu CP1–CP2 theo câu trả lời số 2 trong [snapshot #1](../assets/cp4-interview-snapshot-1.md); dùng mốc 20 phút để tính, chưa bấm giờ và cần xác nhận cách ghi thời gian như mục 4.1. **Target đề xuất:** thời gian tra cứu sử dụng ≤8 phút/người/lượt và tổng công sức cho nhóm 4 người, gồm chuẩn bị/kiểm tra/sửa lỗi, ≤40 người-phút/lượt; không có sai lệch nghiêm trọng về điểm, file, deadline hoặc quy định dùng AI trong thông tin được chia sẻ. **Cách đo:** pilot như mục 4.3 với ít nhất 3 học viên ngoài nhóm; bấm giờ cùng một lượt yêu cầu CP1–CP2, ghi thời gian từng bước và chuẩn bị chung, đối chiếu đầu ra với nguồn, ghi lỗi và thời gian quay về; báo cáo từng mẫu và trung vị, không coi mẫu nhỏ là kết luận toàn lớp. |
+| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | Nếu thử AI, AI không được tự quyết định/diễn giải lại quy định chấm, bịa yêu cầu hoặc nguồn; không sửa đề, tự công bố thông tin chưa duyệt, tự nộp bài hay làm thay phần bắt buộc tự thực hiện. Con người kiểm mọi yêu cầu và liên kết về đúng phiên bản nguồn trước khi chia sẻ; điểm chưa rõ phải đọc nguồn hoặc hỏi coach. Khi AI sai/không hoạt động, quay về bảng nguyên văn đã kiểm hoặc đọc tài liệu gốc; tính cả chi phí quay về vào metric. |
 
-Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng ý không:
+**Phản biện của AI cho bản đề xuất — nhóm chưa xác nhận đồng ý:**
 
--
+- **Baseline chưa vững:** ngay trong snapshot, câu trả lời số 2 ghi 15–20 phút là tổng thời gian, còn câu trích dẫn có thể hiểu là thời gian dò lại sau 5–6 phút đọc README. Cần Đức Anh xác nhận lại cách ghi và bấm giờ cùng phạm vi; CP5 tạm theo câu trả lời số 2, không coi thời gian từng bước là kết quả đo.
+- **Mẫu kiểm chứng còn ít:** đã có [file snapshot #1](../assets/cp4-interview-snapshot-1.md) ghi người phỏng vấn, vai trò người được hỏi, thời điểm theo giai đoạn lab và câu trả lời. Đây vẫn chỉ là 1 người, chưa đạt mức 2–3 người phỏng vấn theo CHECKPOINTS; 4 thành viên nhóm không thay thế được mẫu ngoài nhóm.
+- **Chưa chứng minh cần AI:** liệu bảng thủ công đã đủ đạt ≤8 phút chưa? Cần so sánh No AI với phương án có AI; không suy ra nhu cầu AI chỉ từ việc hướng dẫn dài.
+- **Chi phí có thể chuyển sang người duyệt:** 3 phút duyệt đủ toàn bộ điều kiện chấm và ngoại lệ chưa? Ghi thời gian thực tế kể cả sửa lỗi, thiết lập ban đầu và fallback; vượt mục tiêu thì cập nhật quy trình, không lược bỏ HITL.
+- **Target chưa được người dùng xác nhận:** ngưỡng 8 phút và 40 người-phút là đề xuất để thử, chưa phải hiệu quả thực tế hoặc yêu cầu đã được nhóm chốt. Nhóm cần rà tính phù hợp trước CP6.
 
 ---
 
